@@ -1,0 +1,11 @@
+# Large R data files (generated from Seurat objects)
+*.rds
+
+# R temporary files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Shiny
+rsconnect/
