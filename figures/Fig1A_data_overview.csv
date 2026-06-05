@@ -1,0 +1,10 @@
+Dataset,Technology,Gestational Age,Hofbauer Cells,Disease
+Arutyunyan 2023,scRNA-seq,GW4.5-10,"5,002",Normal 1st trimester
+UCSF Li 2026,snRNA-seq,GW5-39,625,Normal
+GSE290578,scRNA-seq,GW32-38,"6,704",Normal + PE
+gse214607,scRNA-seq,GW6-8,874,Miscarriage
+hoo_2024,scRNA-seq,GW4-8,"1,975",Infection
+my_preterm_cohort,scRNA-seq,Preterm/Term,"6,331",PTL/PNL/TL
+gse173193,scRNA-seq,Late,145,PE
+gse183338,snRNA-seq,Late,239,PE
+gse298119,scRNA-seq,Late,361,PE
