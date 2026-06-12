@@ -12,8 +12,8 @@ cat(ncol(seu),"cells,",length(unique(seu$cluster_final)),"clusters\n")
 # ============================================================
 subtype_colors <- c(
   "Pro-inflammatory" = "#C62828",
-  "MHCII+/CCL13+C1Q+" = "#E65100",
-  "Homeostatic/SPP1+" = "#1565C0",
+  "MHCII+ Antigen-presenting" = "#E65100",
+  "Homeostatic" = "#1565C0",
   "PRKN+ Autophagy" = "#6A1B9A",
   "Vascular remodeling" = "#2E7D32",
   "MKI67+ Proliferating" = "#455A64"

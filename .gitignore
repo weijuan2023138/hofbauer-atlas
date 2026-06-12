@@ -1,0 +1,38 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Data (too large for GitHub)
+*.rds
+*.RDS
+*.h5ad
+*.h5Seurat
+*.h5
+*.npz
+*.mtx
+*.fa
+*.fasta
+*.gz
+*.bgz
+*.tbi
+
+# Output figures
+*.png
+*.pdf
+*.jpg
+
+# Temp
+*~
+*.swp
+.DS_Store
+logs/

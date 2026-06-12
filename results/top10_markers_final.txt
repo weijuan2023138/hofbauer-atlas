@@ -1,0 +1,156 @@
+
+C0 (n=5519 cells):
+--------------------------------------------------
+  IL1B             log2FC=2.94   pct=36%
+  NR4A3            log2FC=2.64   pct=52%
+  KDM6B            log2FC=2.47   pct=67%
+  BAG3             log2FC=2.44   pct=73%
+  EGR3             log2FC=2.36   pct=42%
+  DNAJA4           log2FC=2.21   pct=66%
+  NR4A1            log2FC=2.20   pct=80%
+  TNFSF9           log2FC=2.16   pct=51%
+  CSRNP1           log2FC=2.03   pct=66%
+  CCL4L2           log2FC=2.00   pct=72%
+
+C1 (n=3306 cells):
+--------------------------------------------------
+  HLA-DQA1         log2FC=4.78   pct=43%
+  HLA-DQB1         log2FC=4.48   pct=39%
+  HLA-DRB5         log2FC=4.17   pct=53%
+  HLA-DPA1         log2FC=3.70   pct=63%
+  HLA-DPB1         log2FC=3.49   pct=55%
+  FGL2             log2FC=3.37   pct=38%
+  HLA-DRB1         log2FC=2.88   pct=62%
+  HLA-DRA          log2FC=2.79   pct=76%
+  HLA-DMA          log2FC=2.57   pct=55%
+  IFI27            log2FC=1.86   pct=65%
+
+C2 (n=3291 cells):
+--------------------------------------------------
+  PAGE4            log2FC=1.54   pct=42%
+  TREM2            log2FC=1.15   pct=35%
+  NUDT14           log2FC=1.11   pct=30%
+  ATP5PO           log2FC=1.09   pct=52%
+  LDHB             log2FC=1.03   pct=44%
+  PFDN5            log2FC=1.02   pct=81%
+  NDUFB8           log2FC=0.98   pct=46%
+  NDUFB5           log2FC=0.95   pct=37%
+  NDUFA11          log2FC=0.95   pct=50%
+  CD68             log2FC=0.93   pct=76%
+
+C3 (n=3113 cells):
+--------------------------------------------------
+  ANKUB1           log2FC=4.83   pct=51%
+  STEAP1B          log2FC=4.62   pct=31%
+  FBXL7            log2FC=4.23   pct=53%
+  PRKN             log2FC=3.97   pct=57%
+  TEX14            log2FC=3.86   pct=55%
+  RAD51B           log2FC=3.86   pct=86%
+  NAALADL2         log2FC=3.85   pct=46%
+  NPAS3            log2FC=3.74   pct=56%
+  CARMIL1          log2FC=3.73   pct=65%
+  CCDC146          log2FC=3.72   pct=39%
+
+C4 (n=1878 cells):
+--------------------------------------------------
+  TAC3             log2FC=3.91   pct=30%
+  NOTUM            log2FC=3.90   pct=60%
+  PAPPA2           log2FC=3.88   pct=43%
+  ISM2             log2FC=3.82   pct=37%
+  MFAP5            log2FC=3.76   pct=42%
+  HLA-G            log2FC=3.70   pct=35%
+  AOC1             log2FC=3.65   pct=56%
+  HPGD             log2FC=3.54   pct=46%
+  PAPPA            log2FC=3.45   pct=42%
+  HTRA1            log2FC=3.43   pct=41%
+
+C6 (n=789 cells):
+--------------------------------------------------
+  DLGAP5           log2FC=6.01   pct=44%
+  MKI67            log2FC=5.97   pct=78%
+  DEPDC1           log2FC=5.93   pct=32%
+  HJURP            log2FC=5.92   pct=31%
+  BUB1B            log2FC=5.80   pct=36%
+  KIF4A            log2FC=5.78   pct=38%
+  KIF2C            log2FC=5.73   pct=42%
+  ANLN             log2FC=5.68   pct=51%
+  CKAP2L           log2FC=5.63   pct=34%
+  HMMR             log2FC=5.60   pct=56%
+
+C7 (n=558 cells):
+--------------------------------------------------
+  HBE1             log2FC=4.51   pct=50%
+  HBZ              log2FC=4.29   pct=83%
+  PTP4A1           log2FC=2.60   pct=68%
+  DKK3             log2FC=2.34   pct=33%
+  PLD4             log2FC=2.19   pct=32%
+  LRRC75A          log2FC=2.16   pct=34%
+  USP2             log2FC=1.78   pct=38%
+  CD5L             log2FC=1.77   pct=76%
+  FBXO17           log2FC=1.75   pct=37%
+  LIMD2            log2FC=1.73   pct=58%
+
+C9 (n=403 cells):
+--------------------------------------------------
+  DUSP9            log2FC=3.00   pct=34%
+  SMAGP            log2FC=2.65   pct=38%
+  VGLL1            log2FC=2.64   pct=45%
+  FXYD3            log2FC=2.63   pct=37%
+  TINAGL1          log2FC=2.54   pct=41%
+  ISYNA1           log2FC=2.46   pct=36%
+  GGH              log2FC=2.39   pct=30%
+  SPINT1           log2FC=2.38   pct=39%
+  TSTD1            log2FC=2.37   pct=39%
+  CD24             log2FC=2.27   pct=31%
+
+C10 (n=363 cells):
+--------------------------------------------------
+  AGTR1            log2FC=6.80   pct=36%
+  COX4I2           log2FC=6.04   pct=40%
+  HIGD1B           log2FC=5.91   pct=30%
+  MYH11            log2FC=5.79   pct=32%
+  NDUFA4L2         log2FC=5.74   pct=38%
+  PPP1R14A         log2FC=5.53   pct=44%
+  TBX2             log2FC=5.50   pct=33%
+  WFDC1            log2FC=5.24   pct=37%
+  NR2F1            log2FC=5.05   pct=32%
+  MAP1B            log2FC=4.96   pct=33%
+
+C11 (n=306 cells):
+--------------------------------------------------
+  HBM              log2FC=7.82   pct=41%
+  AHSP             log2FC=7.62   pct=38%
+  HBG1             log2FC=4.72   pct=46%
+  HBB              log2FC=4.65   pct=55%
+  HBA1             log2FC=4.54   pct=94%
+  HBA2             log2FC=4.04   pct=96%
+  HBG2             log2FC=3.92   pct=97%
+  SNCA             log2FC=3.60   pct=54%
+  SLC25A37         log2FC=3.53   pct=56%
+  FAM210B          log2FC=3.29   pct=34%
+
+C13 (n=196 cells):
+--------------------------------------------------
+  GH2              log2FC=6.37   pct=34%
+  PSG4             log2FC=5.99   pct=66%
+  PSG9             log2FC=5.94   pct=64%
+  PSG6             log2FC=5.87   pct=34%
+  PSG1             log2FC=5.72   pct=62%
+  PSG5             log2FC=5.33   pct=57%
+  PSG3             log2FC=5.24   pct=66%
+  PLAC4            log2FC=5.16   pct=44%
+  HOPX             log2FC=4.91   pct=40%
+  KISS1            log2FC=4.77   pct=87%
+
+C14 (n=121 cells):
+--------------------------------------------------
+  FCN3             log2FC=8.25   pct=31%
+  FAM107A          log2FC=8.13   pct=54%
+  SOX17            log2FC=7.86   pct=36%
+  MEOX2            log2FC=7.52   pct=50%
+  NDNF             log2FC=7.42   pct=46%
+  CLEC14A          log2FC=7.32   pct=53%
+  TCF15            log2FC=7.25   pct=38%
+  CYYR1            log2FC=7.24   pct=54%
+  MYCT1            log2FC=7.24   pct=31%
+  ROBO4            log2FC=7.20   pct=57%

@@ -62,9 +62,9 @@ ax.set_yticks(range(len(cts)))
 ax.set_yticklabels(cts, fontsize=8)
 ax.axvline(1, color='black', linewidth=0.5, linestyle='--')
 ax.set_xlabel('Enrichment (observed/expected)')
-ax.set_title('Cell types surrounding Hofbauer cells\n(Sample 007, radius=25\u00b5m)')
+ax.set_title('Cell types surrounding Hofbauer cells')
 plt.tight_layout()
 
 OUTDIR = '/home/weijuan/文档/胎盘单细胞数据/ucsf_integration/figures'
-plt.savefig(f'{OUTDIR}/Fig3b_neighborhood.png', dpi=200, bbox_inches='tight')
+plt.savefig(f'{OUTDIR}/Fig3b_neighborhood.png', dpi=300, bbox_inches='tight')
 print(f"\nSaved Fig3b_neighborhood.png")

@@ -1,0 +1,1017 @@
+
+C0 (n=3231 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 128
+    gse173193: 7
+    gse183338: 1
+    gse214607: 7
+    GSE290578: 71
+    my_preterm_cohort: 3017
+
+  Disease group distribution:
+    Miscarriage / Normal: 7
+    Normal 1st trimester: 128
+    Normal 3rd trimester / Preeclampsia: 71
+    Preeclampsia: 8
+    Preterm Labor: 794
+    Preterm No Labor: 1098
+    Term Labor: 1125
+
+  Top markers:
+  HLA-DQA1         log2FC=3.78    pct=72%  padj=0.0e+00
+  HLA-DRB5         log2FC=3.74    pct=84%  padj=0.0e+00
+  HLA-DQB1         log2FC=3.60    pct=68%  padj=0.0e+00
+  SIGLEC10         log2FC=3.45    pct=31%  padj=9.6e-193
+  FPR3             log2FC=3.36    pct=46%  padj=0.0e+00
+  HLA-DPA1         log2FC=3.27    pct=86%  padj=0.0e+00
+  HLA-DPB1         log2FC=3.22    pct=82%  padj=0.0e+00
+  FGL2             log2FC=3.21    pct=61%  padj=0.0e+00
+  KCNMA1           log2FC=3.08    pct=40%  padj=4.2e-254
+  CLIC2            log2FC=3.05    pct=31%  padj=6.0e-188
+  HLA-DRB1         log2FC=2.87    pct=86%  padj=0.0e+00
+  HLA-DMA          log2FC=2.75    pct=76%  padj=0.0e+00
+  HLA-DRA          log2FC=2.74    pct=91%  padj=0.0e+00
+  FCGR2B           log2FC=2.67    pct=32%  padj=2.5e-178
+  SLAMF8           log2FC=2.60    pct=41%  padj=6.8e-238
+
+C1 (n=3058 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 1
+    gse173193: 9
+    GSE290578: 984
+    gse298119: 3
+    my_preterm_cohort: 2061
+
+  Disease group distribution:
+    Normal 1st trimester: 1
+    Normal 3rd trimester / Preeclampsia: 984
+    Preeclampsia: 12
+    Preterm Labor: 1877
+    Preterm No Labor: 18
+    Term Labor: 166
+
+  Top markers:
+  IL1B             log2FC=2.86    pct=56%  padj=0.0e+00
+  IRAK2            log2FC=2.37    pct=32%  padj=1.7e-150
+  NR4A3            log2FC=2.35    pct=71%  padj=0.0e+00
+  ZC3H12A          log2FC=2.31    pct=32%  padj=1.6e-161
+  KDM6B            log2FC=2.25    pct=87%  padj=0.0e+00
+  EGR3             log2FC=2.03    pct=54%  padj=6.7e-309
+  BAG3             log2FC=1.99    pct=87%  padj=0.0e+00
+  NLRP3            log2FC=1.94    pct=56%  padj=7.7e-287
+  RRP12            log2FC=1.93    pct=40%  padj=8.9e-174
+  PLAUR            log2FC=1.87    pct=82%  padj=0.0e+00
+  CSRNP1           log2FC=1.87    pct=80%  padj=0.0e+00
+  ETV3             log2FC=1.87    pct=36%  padj=3.9e-145
+  CCL4L2           log2FC=1.85    pct=83%  padj=0.0e+00
+  NFKBID           log2FC=1.80    pct=72%  padj=0.0e+00
+  ARL5B            log2FC=1.78    pct=54%  padj=1.2e-261
+
+C2 (n=2842 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    gse183338: 156
+    GSE290578: 589
+    gse298119: 189
+    hoo_2024: 1563
+    UCSF_Li_2026: 345
+
+  Disease group distribution:
+    Infection: 1563
+    Normal 1st/2nd/Term: 345
+    Normal 3rd trimester / Preeclampsia: 589
+    Preeclampsia: 345
+
+  Top markers:
+  ANKUB1           log2FC=4.27    pct=51%  padj=0.0e+00
+  STEAP1B          log2FC=4.09    pct=31%  padj=2.3e-179
+  TEX14            log2FC=3.99    pct=58%  padj=0.0e+00
+  FBXL7            log2FC=3.79    pct=53%  padj=0.0e+00
+  PRKN             log2FC=3.69    pct=58%  padj=0.0e+00
+  RAD51B           log2FC=3.61    pct=86%  padj=0.0e+00
+  C9               log2FC=3.60    pct=45%  padj=5.3e-270
+  NPAS3            log2FC=3.58    pct=57%  padj=0.0e+00
+  ARMH4            log2FC=3.51    pct=34%  padj=3.2e-199
+  CCDC146          log2FC=3.39    pct=40%  padj=1.4e-235
+  LRRC37A3         log2FC=3.38    pct=30%  padj=5.4e-160
+  TMEM117          log2FC=3.35    pct=87%  padj=0.0e+00
+  CAMKMT           log2FC=3.35    pct=61%  padj=0.0e+00
+  NAALADL2         log2FC=3.33    pct=47%  padj=3.1e-286
+  MCF2L2           log2FC=3.32    pct=32%  padj=1.2e-165
+
+C3 (n=2658 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 972
+    gse173193: 47
+    gse183338: 7
+    gse214607: 66
+    GSE290578: 1071
+    gse298119: 30
+    hoo_2024: 3
+    my_preterm_cohort: 462
+
+  Disease group distribution:
+    Infection: 3
+    Miscarriage / Normal: 66
+    Normal 1st trimester: 972
+    Normal 3rd trimester / Preeclampsia: 1071
+    Preeclampsia: 84
+    Preterm Labor: 136
+    Preterm No Labor: 88
+    Term Labor: 238
+
+  Top markers:
+  PAGE4            log2FC=1.17    pct=43%  padj=3.2e-68
+  PFDN5            log2FC=1.16    pct=73%  padj=2.6e-147
+  TMIGD3           log2FC=1.14    pct=43%  padj=4.4e-24
+  CD68             log2FC=1.07    pct=67%  padj=1.3e-70
+  ATP5PO           log2FC=1.05    pct=42%  padj=1.5e-27
+  HPGDS            log2FC=1.00    pct=59%  padj=3.6e-36
+  PRR13            log2FC=0.98    pct=38%  padj=6.3e-11
+  NDUFB8           log2FC=0.97    pct=36%  padj=5.5e-15
+  BLOC1S1          log2FC=0.96    pct=43%  padj=6.0e-15
+  HCST             log2FC=0.94    pct=57%  padj=8.9e-26
+  FCGR1A           log2FC=0.93    pct=46%  padj=4.1e-09
+  LY96             log2FC=0.91    pct=58%  padj=2.2e-19
+  LY86             log2FC=0.90    pct=30%  padj=1.5e-01
+  NDUFB5           log2FC=0.89    pct=29%  padj=4.4e-02
+  DNPH1            log2FC=0.89    pct=39%  padj=1.6e-06
+
+C4 (n=1524 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 349
+    gse173193: 35
+    gse183338: 13
+    gse214607: 323
+    GSE290578: 247
+    gse298119: 43
+    hoo_2024: 15
+    my_preterm_cohort: 461
+    UCSF_Li_2026: 38
+
+  Disease group distribution:
+    Infection: 15
+    Miscarriage / Normal: 323
+    Normal 1st trimester: 349
+    Normal 1st/2nd/Term: 38
+    Normal 3rd trimester / Preeclampsia: 247
+    Preeclampsia: 91
+    Preterm Labor: 121
+    Preterm No Labor: 52
+    Term Labor: 288
+
+  Top markers:
+  LARGE2           log2FC=5.06    pct=34%  padj=6.9e-114
+  MSX2             log2FC=5.02    pct=47%  padj=8.3e-171
+  BMP7             log2FC=4.98    pct=37%  padj=6.4e-124
+  SLC13A3          log2FC=4.88    pct=32%  padj=9.6e-103
+  GRAMD2A          log2FC=4.85    pct=32%  padj=1.8e-101
+  DUSP9            log2FC=4.70    pct=74%  padj=0.0e+00
+  SLC13A4          log2FC=4.67    pct=34%  padj=7.9e-109
+  CDO1             log2FC=4.58    pct=45%  padj=5.1e-159
+  SLC22A11         log2FC=4.50    pct=41%  padj=2.7e-138
+  AP1M2            log2FC=4.48    pct=30%  padj=1.0e-91
+  MORC4            log2FC=4.41    pct=62%  padj=3.5e-259
+  ATP6V1C2         log2FC=4.39    pct=32%  padj=3.1e-100
+  NRK              log2FC=4.37    pct=30%  padj=8.2e-93
+  FXYD3            log2FC=4.26    pct=54%  padj=4.2e-202
+  KRT23            log2FC=4.23    pct=56%  padj=6.1e-219
+
+C5 (n=1502 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 206
+    gse173193: 3
+    gse214607: 14
+    GSE290578: 724
+    gse298119: 7
+    hoo_2024: 2
+    my_preterm_cohort: 546
+
+  Disease group distribution:
+    Infection: 2
+    Miscarriage / Normal: 14
+    Normal 1st trimester: 206
+    Normal 3rd trimester / Preeclampsia: 724
+    Preeclampsia: 10
+    Preterm Labor: 364
+    Preterm No Labor: 43
+    Term Labor: 139
+
+  Top markers:
+  PDK4             log2FC=0.99    pct=62%  padj=1.1e-57
+  METTL7B          log2FC=0.96    pct=33%  padj=4.0e-21
+  GNG10            log2FC=0.94    pct=54%  padj=1.8e-58
+  PCDH12           log2FC=0.93    pct=52%  padj=1.6e-44
+  TLR7             log2FC=0.90    pct=41%  padj=4.0e-25
+  NRROS            log2FC=0.86    pct=31%  padj=2.2e-14
+  TNFRSF11A        log2FC=0.80    pct=31%  padj=2.1e-11
+  CCL4L2           log2FC=0.79    pct=55%  padj=1.4e-46
+  BHLHE41          log2FC=0.79    pct=48%  padj=3.4e-25
+  MAN2B1           log2FC=0.76    pct=40%  padj=1.6e-17
+  CD302            log2FC=0.75    pct=43%  padj=1.5e-20
+  IL12RB2          log2FC=0.75    pct=36%  padj=2.0e-16
+  KCNJ5            log2FC=0.75    pct=41%  padj=8.2e-17
+  RNASEK           log2FC=0.74    pct=52%  padj=1.6e-36
+  TSPAN33          log2FC=0.73    pct=34%  padj=2.6e-12
+
+C6 (n=1407 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 38
+    gse173193: 9
+    gse214607: 64
+    GSE290578: 1113
+    gse298119: 10
+    hoo_2024: 4
+    my_preterm_cohort: 166
+    UCSF_Li_2026: 3
+
+  Disease group distribution:
+    Infection: 4
+    Miscarriage / Normal: 64
+    Normal 1st trimester: 38
+    Normal 1st/2nd/Term: 3
+    Normal 3rd trimester / Preeclampsia: 1113
+    Preeclampsia: 19
+    Preterm Labor: 129
+    Preterm No Labor: 10
+    Term Labor: 27
+
+  Top markers:
+  TAC3             log2FC=3.85    pct=34%  padj=3.8e-97
+  AOC1             log2FC=3.49    pct=58%  padj=9.6e-201
+  PAPPA2           log2FC=3.35    pct=40%  padj=2.9e-117
+  NOTUM            log2FC=3.33    pct=54%  padj=8.3e-176
+  PAPPA            log2FC=3.11    pct=41%  padj=8.2e-112
+  PRG2             log2FC=3.02    pct=88%  padj=0.0e+00
+  SERPINE2         log2FC=2.91    pct=78%  padj=0.0e+00
+  FLT1             log2FC=2.69    pct=61%  padj=2.9e-183
+  HTRA1            log2FC=2.66    pct=32%  padj=2.6e-66
+  SERPINE1         log2FC=2.63    pct=46%  padj=8.2e-115
+  HPGD             log2FC=2.43    pct=32%  padj=4.7e-61
+  FSTL3            log2FC=2.34    pct=33%  padj=6.1e-56
+  CSH1             log2FC=2.21    pct=54%  padj=2.6e-136
+  EEF1G            log2FC=2.19    pct=59%  padj=6.7e-141
+  FN1              log2FC=2.13    pct=98%  padj=0.0e+00
+
+C7 (n=1360 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 750
+    gse173193: 14
+    gse183338: 1
+    gse214607: 101
+    GSE290578: 355
+    gse298119: 17
+    hoo_2024: 116
+    my_preterm_cohort: 6
+
+  Disease group distribution:
+    Infection: 116
+    Miscarriage / Normal: 101
+    Normal 1st trimester: 750
+    Normal 3rd trimester / Preeclampsia: 355
+    Preeclampsia: 32
+    Preterm Labor: 2
+    Term Labor: 4
+
+  Top markers:
+  CD5L             log2FC=2.04    pct=58%  padj=1.3e-160
+  S100A1           log2FC=1.98    pct=55%  padj=5.7e-141
+  OTOA             log2FC=1.96    pct=45%  padj=2.6e-96
+  FABP3            log2FC=1.90    pct=34%  padj=7.2e-66
+  PVALB            log2FC=1.86    pct=31%  padj=1.1e-54
+  BIRC7            log2FC=1.84    pct=43%  padj=3.5e-92
+  BCL11A           log2FC=1.76    pct=41%  padj=3.2e-81
+  SLC28A1          log2FC=1.74    pct=43%  padj=2.1e-83
+  CHCHD6           log2FC=1.74    pct=43%  padj=1.8e-83
+  DKK2             log2FC=1.67    pct=35%  padj=2.6e-59
+  GAPLINC          log2FC=1.64    pct=58%  padj=2.0e-129
+  DHRS4L2          log2FC=1.54    pct=46%  padj=1.5e-81
+  SENCR            log2FC=1.54    pct=30%  padj=5.7e-44
+  FXYD6            log2FC=1.44    pct=55%  padj=3.5e-103
+  ZSCAN16-AS1      log2FC=1.40    pct=45%  padj=2.3e-72
+
+C8 (n=1038 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 426
+    gse173193: 7
+    gse183338: 32
+    gse214607: 28
+    GSE290578: 275
+    gse298119: 23
+    hoo_2024: 155
+    my_preterm_cohort: 56
+    UCSF_Li_2026: 36
+
+  Disease group distribution:
+    Infection: 155
+    Miscarriage / Normal: 28
+    Normal 1st trimester: 426
+    Normal 1st/2nd/Term: 36
+    Normal 3rd trimester / Preeclampsia: 275
+    Preeclampsia: 62
+    Preterm Labor: 39
+    Preterm No Labor: 7
+    Term Labor: 10
+
+  Top markers:
+  NLK              log2FC=0.98    pct=33%  padj=2.7e-16
+  CYSLTR1          log2FC=0.96    pct=39%  padj=7.2e-26
+  PTPRG            log2FC=0.96    pct=34%  padj=1.7e-16
+  BCAP29           log2FC=0.89    pct=34%  padj=7.9e-19
+  GRIN2C           log2FC=0.88    pct=33%  padj=2.2e-18
+  PRKCB            log2FC=0.85    pct=51%  padj=2.5e-33
+  FTX              log2FC=0.84    pct=46%  padj=7.1e-25
+  TTC14            log2FC=0.84    pct=37%  padj=1.2e-18
+  NSF              log2FC=0.83    pct=30%  padj=3.3e-13
+  MAP3K5           log2FC=0.83    pct=39%  padj=2.6e-19
+  FCGBP            log2FC=0.83    pct=34%  padj=5.8e-25
+  LENG8            log2FC=0.83    pct=40%  padj=3.3e-22
+  CLCN5            log2FC=0.82    pct=32%  padj=2.2e-12
+  UBE2W            log2FC=0.81    pct=48%  padj=5.8e-29
+  PIAS2            log2FC=0.80    pct=48%  padj=5.8e-29
+
+C9 (n=814 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 553
+    gse173193: 2
+    gse183338: 4
+    gse214607: 36
+    GSE290578: 63
+    gse298119: 10
+    hoo_2024: 33
+    my_preterm_cohort: 112
+    UCSF_Li_2026: 1
+
+  Disease group distribution:
+    Infection: 33
+    Miscarriage / Normal: 36
+    Normal 1st trimester: 553
+    Normal 1st/2nd/Term: 1
+    Normal 3rd trimester / Preeclampsia: 63
+    Preeclampsia: 16
+    Preterm Labor: 52
+    Preterm No Labor: 16
+    Term Labor: 44
+
+  Top markers:
+  MKI67            log2FC=5.46    pct=80%  padj=4.9e-237
+  DLGAP5           log2FC=5.28    pct=44%  padj=3.8e-88
+  HJURP            log2FC=5.20    pct=31%  padj=1.2e-55
+  KIF4A            log2FC=5.19    pct=37%  padj=5.3e-71
+  BUB1B            log2FC=5.13    pct=36%  padj=1.4e-66
+  KIF2C            log2FC=5.10    pct=42%  padj=4.1e-82
+  HMMR             log2FC=5.10    pct=57%  padj=2.4e-126
+  FOXM1            log2FC=5.10    pct=47%  padj=1.0e-93
+  NDC80            log2FC=5.05    pct=42%  padj=2.7e-83
+  CEP55            log2FC=5.03    pct=52%  padj=7.9e-111
+  MND1             log2FC=5.03    pct=40%  padj=2.6e-78
+  ANLN             log2FC=5.02    pct=52%  padj=1.2e-107
+  NCAPG            log2FC=5.02    pct=48%  padj=8.5e-99
+  CKAP2L           log2FC=5.00    pct=34%  padj=1.6e-62
+  SPC25            log2FC=4.99    pct=41%  padj=4.3e-79
+
+C10 (n=805 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 1
+    gse173193: 1
+    gse214607: 3
+    GSE290578: 749
+    my_preterm_cohort: 51
+
+  Disease group distribution:
+    Miscarriage / Normal: 3
+    Normal 1st trimester: 1
+    Normal 3rd trimester / Preeclampsia: 749
+    Preeclampsia: 1
+    Preterm Labor: 32
+    Preterm No Labor: 4
+    Term Labor: 15
+
+  Top markers:
+  CYB5D1           log2FC=2.96    pct=42%  padj=1.1e-72
+  SEMA4A           log2FC=2.59    pct=59%  padj=1.9e-114
+  CCDC144A         log2FC=2.55    pct=44%  padj=1.3e-68
+  ICAM4            log2FC=2.46    pct=49%  padj=1.1e-81
+  MRNIP            log2FC=2.15    pct=35%  padj=1.0e-45
+  IQCN             log2FC=2.10    pct=32%  padj=2.4e-41
+  ZNF844           log2FC=2.10    pct=44%  padj=9.6e-62
+  SLC25A44         log2FC=2.07    pct=35%  padj=2.1e-42
+  DKK2             log2FC=1.80    pct=53%  padj=4.4e-82
+  RGS16            log2FC=1.78    pct=52%  padj=4.8e-77
+  POLG2            log2FC=1.77    pct=38%  padj=1.1e-44
+  EGLN2            log2FC=1.75    pct=32%  padj=2.0e-35
+  ABCA6            log2FC=1.72    pct=38%  padj=2.2e-46
+  LTBP2            log2FC=1.69    pct=55%  padj=7.9e-80
+  PLEKHG2          log2FC=1.68    pct=48%  padj=3.4e-61
+
+C11 (n=684 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 682
+    gse214607: 2
+
+  Disease group distribution:
+    Miscarriage / Normal: 2
+    Normal 1st trimester: 682
+
+  Top markers:
+  HBE1             log2FC=4.61    pct=49%  padj=2.7e-91
+  HBZ              log2FC=4.36    pct=85%  padj=1.3e-256
+  PTP4A1           log2FC=2.77    pct=71%  padj=4.7e-148
+  LRRC75A          log2FC=2.26    pct=38%  padj=2.4e-48
+  DKK3             log2FC=2.15    pct=37%  padj=2.9e-45
+  USP2             log2FC=2.14    pct=40%  padj=2.8e-47
+  FBXO17           log2FC=2.11    pct=40%  padj=1.2e-48
+  CD5L             log2FC=2.09    pct=78%  padj=1.7e-167
+  AGR2             log2FC=1.96    pct=56%  padj=8.5e-82
+  GPR68            log2FC=1.95    pct=31%  padj=6.7e-31
+  BCL11A           log2FC=1.93    pct=55%  padj=5.8e-75
+  SLC12A5          log2FC=1.83    pct=42%  padj=2.5e-47
+  GALNT3           log2FC=1.83    pct=30%  padj=6.1e-30
+  C1orf56          log2FC=1.77    pct=36%  padj=5.0e-36
+  IGF2BP2          log2FC=1.77    pct=37%  padj=3.3e-39
+
+C12 (n=683 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 6
+    gse173193: 1
+    GSE290578: 18
+    my_preterm_cohort: 658
+
+  Disease group distribution:
+    Normal 1st trimester: 6
+    Normal 3rd trimester / Preeclampsia: 18
+    Preeclampsia: 1
+    Preterm Labor: 39
+    Preterm No Labor: 8
+    Term Labor: 611
+
+  Top markers:
+  CXCL3            log2FC=3.14    pct=63%  padj=1.4e-109
+  CXCL1            log2FC=3.06    pct=32%  padj=1.2e-37
+  TNFSF9           log2FC=2.94    pct=69%  padj=6.5e-116
+  DNAJA4           log2FC=2.77    pct=85%  padj=1.9e-190
+  CXCL2            log2FC=2.73    pct=78%  padj=3.8e-159
+  ZFAND2A          log2FC=2.70    pct=71%  padj=2.4e-117
+  DNAJB4           log2FC=2.63    pct=85%  padj=1.7e-186
+  BAG3             log2FC=2.40    pct=83%  padj=6.4e-163
+  DUSP2            log2FC=2.36    pct=70%  padj=4.0e-109
+  TNF              log2FC=2.35    pct=50%  padj=2.7e-54
+  NR4A1            log2FC=2.21    pct=94%  padj=7.9e-269
+  NFKBID           log2FC=2.19    pct=62%  padj=1.7e-70
+  CCL5             log2FC=2.16    pct=42%  padj=1.5e-40
+  PLK3             log2FC=2.09    pct=40%  padj=4.2e-34
+  ICAM1            log2FC=2.06    pct=91%  padj=2.1e-207
+
+C13 (n=680 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 32
+    gse214607: 1
+    GSE290578: 14
+    gse298119: 3
+    my_preterm_cohort: 630
+
+  Disease group distribution:
+    Miscarriage / Normal: 1
+    Normal 1st trimester: 32
+    Normal 3rd trimester / Preeclampsia: 14
+    Preeclampsia: 3
+    Preterm Labor: 35
+    Preterm No Labor: 558
+    Term Labor: 37
+
+  Top markers:
+  IGFBP1           log2FC=4.30    pct=93%  padj=1.7e-291
+  DKK1             log2FC=4.26    pct=50%  padj=1.4e-77
+  CD248            log2FC=4.26    pct=37%  padj=4.6e-50
+  HSPB6            log2FC=4.18    pct=39%  padj=1.1e-53
+  ABI3BP           log2FC=4.01    pct=32%  padj=5.4e-41
+  RBP1             log2FC=3.48    pct=41%  padj=1.2e-52
+  SLC2A5           log2FC=3.25    pct=32%  padj=9.6e-41
+  IGFBP5           log2FC=3.24    pct=51%  padj=4.3e-70
+  LUM              log2FC=3.20    pct=82%  padj=4.6e-169
+  DCN              log2FC=3.08    pct=89%  padj=2.5e-217
+  IGFBP2           log2FC=3.03    pct=48%  padj=7.6e-60
+  TGM2             log2FC=2.94    pct=66%  padj=6.3e-101
+  IGFBP7           log2FC=2.91    pct=55%  padj=1.4e-79
+  FCGR2B           log2FC=2.83    pct=39%  padj=1.7e-48
+  TNS1             log2FC=2.69    pct=37%  padj=1.6e-39
+
+C14 (n=543 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 209
+    gse173193: 3
+    gse183338: 1
+    gse214607: 54
+    GSE290578: 102
+    gse298119: 2
+    my_preterm_cohort: 158
+    UCSF_Li_2026: 14
+
+  Disease group distribution:
+    Miscarriage / Normal: 54
+    Normal 1st trimester: 209
+    Normal 1st/2nd/Term: 14
+    Normal 3rd trimester / Preeclampsia: 102
+    Preeclampsia: 6
+    Preterm Labor: 62
+    Preterm No Labor: 64
+    Term Labor: 32
+
+  Top markers:
+  MYCNUT           log2FC=5.96    pct=42%  padj=1.7e-56
+  SLCO4A1          log2FC=5.35    pct=37%  padj=3.1e-45
+  CLDN19           log2FC=5.26    pct=55%  padj=1.4e-79
+  ASAP3            log2FC=5.22    pct=35%  padj=4.1e-40
+  KRT17            log2FC=5.16    pct=31%  padj=2.8e-35
+  AIF1L            log2FC=5.02    pct=57%  padj=1.0e-82
+  SYT8             log2FC=4.94    pct=41%  padj=1.5e-50
+  KRT14            log2FC=4.89    pct=32%  padj=5.1e-38
+  N4BP3            log2FC=4.88    pct=31%  padj=1.7e-33
+  CXCR6            log2FC=4.85    pct=31%  padj=1.7e-35
+  BCAR4            log2FC=4.80    pct=51%  padj=2.5e-70
+  HAPLN3           log2FC=4.79    pct=41%  padj=1.8e-52
+  RASGRF2          log2FC=4.77    pct=34%  padj=1.4e-36
+  PYCR1            log2FC=4.70    pct=32%  padj=1.9e-35
+  INHA             log2FC=4.61    pct=33%  padj=3.5e-36
+
+C15 (n=431 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 23
+    gse214607: 5
+    GSE290578: 14
+    gse298119: 1
+    my_preterm_cohort: 384
+    UCSF_Li_2026: 4
+
+  Disease group distribution:
+    Miscarriage / Normal: 5
+    Normal 1st trimester: 23
+    Normal 1st/2nd/Term: 4
+    Normal 3rd trimester / Preeclampsia: 14
+    Preeclampsia: 1
+    Preterm Labor: 122
+    Preterm No Labor: 170
+    Term Labor: 92
+
+  Top markers:
+  PRF1             log2FC=7.49    pct=47%  padj=3.6e-49
+  CD3E             log2FC=7.28    pct=47%  padj=4.9e-49
+  TRBC2            log2FC=7.22    pct=36%  padj=2.2e-33
+  CD3D             log2FC=7.03    pct=31%  padj=3.5e-28
+  LCK              log2FC=6.94    pct=35%  padj=3.1e-32
+  GZMM             log2FC=6.75    pct=33%  padj=4.8e-30
+  CST7             log2FC=6.72    pct=48%  padj=3.2e-51
+  CD2              log2FC=6.57    pct=33%  padj=3.6e-29
+  GZMB             log2FC=6.57    pct=33%  padj=1.0e-30
+  GZMA             log2FC=6.55    pct=46%  padj=5.5e-49
+  CTSW             log2FC=6.47    pct=40%  padj=1.2e-39
+  ZAP70            log2FC=6.33    pct=39%  padj=2.2e-36
+  KLRB1            log2FC=6.32    pct=32%  padj=8.3e-29
+  CD247            log2FC=6.30    pct=41%  padj=3.7e-39
+  CD7              log2FC=6.11    pct=55%  padj=1.1e-60
+
+C16 (n=421 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 60
+    gse183338: 1
+    gse214607: 1
+    GSE290578: 86
+    gse298119: 1
+    hoo_2024: 4
+    my_preterm_cohort: 265
+    UCSF_Li_2026: 3
+
+  Disease group distribution:
+    Infection: 4
+    Miscarriage / Normal: 1
+    Normal 1st trimester: 60
+    Normal 1st/2nd/Term: 3
+    Normal 3rd trimester / Preeclampsia: 86
+    Preeclampsia: 2
+    Preterm Labor: 259
+    Preterm No Labor: 2
+    Term Labor: 4
+
+  Top markers:
+  PROM1            log2FC=6.65    pct=42%  padj=9.4e-41
+  COL11A1          log2FC=6.45    pct=32%  padj=1.6e-28
+  SLC22A3          log2FC=6.42    pct=45%  padj=6.1e-44
+  SBSPON           log2FC=6.34    pct=52%  padj=4.5e-56
+  CADM3            log2FC=6.28    pct=56%  padj=1.5e-63
+  NFASC            log2FC=6.27    pct=44%  padj=6.5e-41
+  MSC              log2FC=6.25    pct=31%  padj=1.0e-26
+  ITGBL1           log2FC=6.19    pct=48%  padj=7.6e-51
+  EPHA3            log2FC=6.18    pct=31%  padj=3.2e-27
+  SLIT2            log2FC=6.15    pct=56%  padj=4.8e-58
+  CREB3L1          log2FC=6.13    pct=57%  padj=1.3e-64
+  PCDH10           log2FC=6.12    pct=47%  padj=1.5e-48
+  PODN             log2FC=6.09    pct=37%  padj=9.7e-34
+  DIO3             log2FC=6.02    pct=39%  padj=3.1e-37
+  PDGFRA           log2FC=6.00    pct=77%  padj=6.3e-109
+
+C17 (n=392 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 331
+    gse173193: 2
+    gse183338: 1
+    gse214607: 4
+    GSE290578: 9
+    gse298119: 2
+    hoo_2024: 3
+    my_preterm_cohort: 40
+
+  Disease group distribution:
+    Infection: 3
+    Miscarriage / Normal: 4
+    Normal 1st trimester: 331
+    Normal 3rd trimester / Preeclampsia: 9
+    Preeclampsia: 5
+    Preterm Labor: 6
+    Preterm No Labor: 1
+    Term Labor: 33
+
+  Top markers:
+  FBXO17           log2FC=2.52    pct=55%  padj=1.8e-49
+  FABP3            log2FC=2.41    pct=58%  padj=5.9e-53
+  CHCHD6           log2FC=2.23    pct=71%  padj=2.4e-76
+  CD5L             log2FC=2.17    pct=78%  padj=4.1e-95
+  PTP4A1           log2FC=2.12    pct=55%  padj=1.7e-45
+  BIRC7            log2FC=2.11    pct=65%  padj=1.9e-62
+  TSTD1            log2FC=2.06    pct=51%  padj=1.1e-37
+  FXYD3            log2FC=2.05    pct=50%  padj=6.0e-39
+  BCL11A           log2FC=2.00    pct=60%  padj=3.2e-50
+  SPR              log2FC=1.95    pct=46%  padj=2.9e-30
+  DHRS4L2          log2FC=1.93    pct=67%  padj=8.6e-62
+  HAGHL            log2FC=1.91    pct=43%  padj=1.3e-27
+  MYL5             log2FC=1.91    pct=31%  padj=5.3e-16
+  OCIAD2           log2FC=1.87    pct=40%  padj=8.2e-24
+  OXCT1            log2FC=1.86    pct=45%  padj=1.9e-29
+
+C18 (n=362 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    gse214607: 1
+    my_preterm_cohort: 361
+
+  Disease group distribution:
+    Miscarriage / Normal: 1
+    Preterm Labor: 38
+    Preterm No Labor: 215
+    Term Labor: 108
+
+  Top markers:
+  RELN             log2FC=9.79    pct=65%  padj=2.1e-70
+  SCN3B            log2FC=8.67    pct=35%  padj=8.3e-27
+  TFF3             log2FC=8.42    pct=71%  padj=3.8e-85
+  CCL21            log2FC=8.13    pct=91%  padj=3.3e-154
+  EMCN             log2FC=7.83    pct=38%  padj=3.1e-30
+  F2RL3            log2FC=7.69    pct=30%  padj=4.5e-22
+  RHOJ             log2FC=7.63    pct=50%  padj=1.1e-44
+  PIEZO2           log2FC=7.58    pct=36%  padj=2.0e-27
+  MMRN1            log2FC=7.51    pct=92%  padj=1.5e-172
+  FLT4             log2FC=7.49    pct=65%  padj=4.3e-68
+  TM4SF18          log2FC=7.42    pct=46%  padj=6.3e-40
+  CAVIN2           log2FC=7.00    pct=86%  padj=1.4e-137
+  CLDN5            log2FC=6.87    pct=79%  padj=7.1e-104
+  ROBO4            log2FC=6.79    pct=58%  padj=1.7e-57
+  PGM5             log2FC=6.75    pct=59%  padj=1.7e-57
+
+C19 (n=319 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 15
+    gse183338: 2
+    gse214607: 1
+    GSE290578: 49
+    gse298119: 2
+    hoo_2024: 3
+    my_preterm_cohort: 243
+    UCSF_Li_2026: 4
+
+  Disease group distribution:
+    Infection: 3
+    Miscarriage / Normal: 1
+    Normal 1st trimester: 15
+    Normal 1st/2nd/Term: 4
+    Normal 3rd trimester / Preeclampsia: 49
+    Preeclampsia: 4
+    Preterm Labor: 145
+    Preterm No Labor: 33
+    Term Labor: 65
+
+  Top markers:
+  AGTR1            log2FC=6.83    pct=46%  padj=1.0e-34
+  GJA4             log2FC=6.62    pct=38%  padj=2.9e-26
+  FAM162B          log2FC=6.40    pct=42%  padj=1.1e-28
+  KCNK3            log2FC=6.38    pct=41%  padj=1.2e-27
+  CARMN            log2FC=6.37    pct=31%  padj=4.8e-17
+  TRPC6            log2FC=6.25    pct=33%  padj=4.3e-20
+  HIGD1B           log2FC=6.08    pct=40%  padj=4.6e-28
+  MYH11            log2FC=6.06    pct=50%  padj=2.2e-38
+  COX4I2           log2FC=5.96    pct=50%  padj=5.2e-41
+  GUCY1A2          log2FC=5.90    pct=45%  padj=2.8e-32
+  NDUFA4L2         log2FC=5.76    pct=52%  padj=1.5e-41
+  LMOD1            log2FC=5.69    pct=61%  padj=2.5e-49
+  PDGFRB           log2FC=5.60    pct=63%  padj=6.5e-52
+  LAMC3            log2FC=5.45    pct=40%  padj=2.5e-26
+  NES              log2FC=5.22    pct=34%  padj=1.1e-21
+
+C20 (n=251 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 86
+    gse183338: 5
+    gse214607: 6
+    GSE290578: 61
+    gse298119: 4
+    hoo_2024: 21
+    my_preterm_cohort: 67
+    UCSF_Li_2026: 1
+
+  Disease group distribution:
+    Infection: 21
+    Miscarriage / Normal: 6
+    Normal 1st trimester: 86
+    Normal 1st/2nd/Term: 1
+    Normal 3rd trimester / Preeclampsia: 61
+    Preeclampsia: 9
+    Preterm Labor: 50
+    Term Labor: 17
+
+  Top markers:
+  SLC4A1           log2FC=9.12    pct=32%  padj=1.6e-14
+  AHSP             log2FC=8.67    pct=47%  padj=8.5e-25
+  HBM              log2FC=8.51    pct=53%  padj=2.3e-29
+  TENT5C           log2FC=6.13    pct=32%  padj=2.4e-13
+  HBG1             log2FC=5.97    pct=71%  padj=2.2e-50
+  HBB              log2FC=5.59    pct=72%  padj=1.2e-46
+  HBA1             log2FC=5.52    pct=96%  padj=8.0e-94
+  HBA2             log2FC=5.04    pct=96%  padj=9.4e-93
+  HBG2             log2FC=4.92    pct=94%  padj=8.0e-88
+  SNCA             log2FC=4.57    pct=57%  padj=6.8e-26
+  SLC25A37         log2FC=4.50    pct=71%  padj=2.0e-38
+  STRADB           log2FC=4.34    pct=31%  padj=2.7e-09
+  FAM210B          log2FC=4.10    pct=46%  padj=1.0e-16
+  EPB41            log2FC=3.66    pct=34%  padj=3.1e-08
+  SLC25A39         log2FC=3.42    pct=57%  padj=1.6e-17
+
+C21 (n=235 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 15
+    gse183338: 5
+    gse214607: 94
+    GSE290578: 12
+    gse298119: 3
+    hoo_2024: 14
+    my_preterm_cohort: 17
+    UCSF_Li_2026: 75
+
+  Disease group distribution:
+    Infection: 14
+    Miscarriage / Normal: 94
+    Normal 1st trimester: 15
+    Normal 1st/2nd/Term: 75
+    Normal 3rd trimester / Preeclampsia: 12
+    Preeclampsia: 8
+    Preterm Labor: 13
+    Preterm No Labor: 2
+    Term Labor: 2
+
+  Top markers:
+  GH2              log2FC=6.30    pct=36%  padj=4.0e-17
+  PSG11            log2FC=6.18    pct=35%  padj=1.4e-15
+  PSG6             log2FC=5.89    pct=40%  padj=2.7e-19
+  PSG4             log2FC=5.79    pct=66%  padj=9.0e-44
+  PSG1             log2FC=5.71    pct=65%  padj=2.3e-42
+  PSG9             log2FC=5.59    pct=66%  padj=2.9e-42
+  PSG5             log2FC=5.41    pct=60%  padj=1.2e-36
+  PSG3             log2FC=5.33    pct=72%  padj=9.6e-51
+  SDC1             log2FC=5.23    pct=33%  padj=4.4e-14
+  PSG2             log2FC=5.06    pct=72%  padj=1.1e-51
+  PLAC4            log2FC=4.92    pct=44%  padj=5.4e-22
+  KISS1            log2FC=4.87    pct=92%  padj=8.9e-92
+  HOPX             log2FC=4.86    pct=41%  padj=3.3e-18
+  CSH2             log2FC=4.68    pct=89%  padj=1.3e-85
+  CYP19A1          log2FC=4.56    pct=54%  padj=1.4e-28
+
+C22 (n=202 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 10
+    gse183338: 1
+    GSE290578: 21
+    gse298119: 3
+    hoo_2024: 1
+    my_preterm_cohort: 165
+    UCSF_Li_2026: 1
+
+  Disease group distribution:
+    Infection: 1
+    Normal 1st trimester: 10
+    Normal 1st/2nd/Term: 1
+    Normal 3rd trimester / Preeclampsia: 21
+    Preeclampsia: 4
+    Preterm Labor: 127
+    Preterm No Labor: 29
+    Term Labor: 9
+
+  Top markers:
+  TCF15            log2FC=7.66    pct=31%  padj=4.4e-11
+  FAM107A          log2FC=7.61    pct=48%  padj=8.6e-22
+  MEOX2            log2FC=7.44    pct=38%  padj=1.0e-15
+  CYYR1            log2FC=7.37    pct=47%  padj=9.4e-21
+  APLNR            log2FC=6.87    pct=39%  padj=1.7e-16
+  IL33             log2FC=6.63    pct=38%  padj=7.8e-15
+  SOX7             log2FC=6.50    pct=45%  padj=3.5e-19
+  PLVAP            log2FC=6.26    pct=39%  padj=2.0e-16
+  MMRN2            log2FC=6.23    pct=48%  padj=2.3e-21
+  NNAT             log2FC=6.19    pct=48%  padj=2.1e-22
+  IDO1             log2FC=6.14    pct=35%  padj=3.2e-13
+  ADGRF5           log2FC=6.09    pct=42%  padj=6.2e-17
+  NPR1             log2FC=6.00    pct=33%  padj=1.7e-11
+  PLCB4            log2FC=5.92    pct=31%  padj=2.2e-10
+  CLEC14A          log2FC=5.88    pct=49%  padj=3.3e-22
+
+C23 (n=199 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 29
+    gse173193: 5
+    gse183338: 4
+    gse214607: 53
+    GSE290578: 10
+    gse298119: 3
+    hoo_2024: 9
+    my_preterm_cohort: 20
+    UCSF_Li_2026: 66
+
+  Disease group distribution:
+    Infection: 9
+    Miscarriage / Normal: 53
+    Normal 1st trimester: 29
+    Normal 1st/2nd/Term: 66
+    Normal 3rd trimester / Preeclampsia: 10
+    Preeclampsia: 12
+    Preterm Labor: 11
+    Preterm No Labor: 6
+    Term Labor: 3
+
+  Top markers:
+  ERVFRD-1         log2FC=6.64    pct=30%  padj=8.0e-11
+  SH3TC2           log2FC=6.52    pct=32%  padj=5.5e-13
+  PHYHIPL          log2FC=6.11    pct=32%  padj=4.5e-13
+  GRIP1            log2FC=5.80    pct=39%  padj=2.7e-17
+  LCMT1-AS2        log2FC=5.79    pct=58%  padj=6.2e-30
+  PLAC4            log2FC=5.24    pct=55%  padj=2.7e-27
+  NECTIN3          log2FC=5.11    pct=49%  padj=1.1e-22
+  CYP19A1          log2FC=5.10    pct=75%  padj=3.0e-49
+  PLEKHA6          log2FC=5.00    pct=34%  padj=4.5e-13
+  GULP1            log2FC=4.87    pct=61%  padj=2.5e-31
+  C4orf19          log2FC=4.77    pct=39%  padj=7.8e-16
+  DEPDC1B          log2FC=4.71    pct=39%  padj=5.4e-16
+  PSG6             log2FC=4.70    pct=39%  padj=6.2e-16
+  THSD7A           log2FC=4.69    pct=44%  padj=4.4e-19
+  EXPH5            log2FC=4.67    pct=43%  padj=4.6e-18
+
+C24 (n=142 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 76
+    gse214607: 3
+    my_preterm_cohort: 63
+
+  Disease group distribution:
+    Miscarriage / Normal: 3
+    Normal 1st trimester: 76
+    Preterm Labor: 15
+    Preterm No Labor: 23
+    Term Labor: 25
+
+  Top markers:
+  LSP1             log2FC=3.42    pct=44%  padj=3.4e-11
+  PHLDA1           log2FC=3.23    pct=47%  padj=1.6e-11
+  CD48             log2FC=3.00    pct=32%  padj=1.1e-06
+  CAMK1            log2FC=2.55    pct=34%  padj=4.6e-06
+  IL1RN            log2FC=2.50    pct=37%  padj=1.1e-06
+  MT1E             log2FC=2.46    pct=37%  padj=4.9e-06
+  C15orf48         log2FC=2.39    pct=42%  padj=3.0e-08
+  CLEC11A          log2FC=2.31    pct=42%  padj=3.9e-09
+  APOBR            log2FC=2.22    pct=33%  padj=2.7e-04
+  AGR2             log2FC=2.15    pct=53%  padj=1.1e-12
+  MT1F             log2FC=2.14    pct=36%  padj=1.5e-05
+  SLC11A1          log2FC=2.10    pct=54%  padj=8.6e-10
+  PLP2             log2FC=2.06    pct=63%  padj=4.1e-17
+  FLNA             log2FC=2.06    pct=47%  padj=4.7e-08
+  GLIPR2           log2FC=2.02    pct=43%  padj=2.2e-06
+
+C25 (n=90 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    Arutyunyan: 4
+    gse183338: 5
+    gse214607: 7
+    GSE290578: 7
+    gse298119: 3
+    hoo_2024: 27
+    my_preterm_cohort: 3
+    UCSF_Li_2026: 34
+
+  Disease group distribution:
+    Infection: 27
+    Miscarriage / Normal: 7
+    Normal 1st trimester: 4
+    Normal 1st/2nd/Term: 34
+    Normal 3rd trimester / Preeclampsia: 7
+    Preeclampsia: 8
+    Preterm Labor: 1
+    Term Labor: 2
+
+  Top markers:
+  PENK             log2FC=4.93    pct=31%  padj=1.0e-03
+  PSG4             log2FC=4.23    pct=47%  padj=7.8e-07
+  PSG1             log2FC=3.87    pct=47%  padj=8.9e-07
+  PSG5             log2FC=3.71    pct=47%  padj=4.3e-06
+  PSG3             log2FC=3.63    pct=60%  padj=8.9e-10
+  KISS1            log2FC=3.60    pct=84%  padj=2.1e-22
+  PLAC4            log2FC=3.59    pct=34%  padj=7.1e-03
+  PSG9             log2FC=3.59    pct=52%  padj=2.2e-08
+  CSH2             log2FC=3.50    pct=82%  padj=3.5e-19
+  PSG2             log2FC=3.35    pct=51%  padj=3.4e-07
+  TFPI2            log2FC=3.23    pct=81%  padj=2.0e-18
+  HOPX             log2FC=3.16    pct=38%  padj=1.6e-03
+  ANKUB1           log2FC=3.15    pct=49%  padj=2.0e-06
+  NAALADL2         log2FC=3.05    pct=49%  padj=1.9e-06
+  CARMIL1          log2FC=2.92    pct=62%  padj=3.4e-10
+
+C26 (n=64 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    GSE290578: 60
+    gse298119: 2
+    hoo_2024: 2
+
+  Disease group distribution:
+    Infection: 2
+    Normal 3rd trimester / Preeclampsia: 60
+    Preeclampsia: 2
+
+  Top markers:
+  TULP2            log2FC=4.42    pct=69%  padj=1.3e-11
+  SPDYA            log2FC=4.17    pct=36%  padj=1.6e-02
+  ASTL             log2FC=3.79    pct=44%  padj=6.6e-04
+  AMZ1             log2FC=3.51    pct=41%  padj=5.0e-03
+  NPHS1            log2FC=3.48    pct=41%  padj=4.0e-03
+  ARMH4            log2FC=3.46    pct=66%  padj=6.6e-10
+  CKMT1A           log2FC=3.40    pct=31%  padj=1.4e-01
+  SLC39A12         log2FC=3.40    pct=34%  padj=6.2e-02
+  TEX14            log2FC=3.33    pct=89%  padj=5.1e-23
+  RAB17            log2FC=3.32    pct=33%  padj=7.5e-02
+  SIK1             log2FC=3.30    pct=36%  padj=3.0e-02
+  KCNG2            log2FC=3.26    pct=62%  padj=9.4e-09
+  ZNF487           log2FC=3.26    pct=36%  padj=5.2e-02
+  CCDC138          log2FC=3.14    pct=41%  padj=7.7e-03
+  CKMT1B           log2FC=2.98    pct=31%  padj=1.7e-01
+
+C27 (n=24 cells):
+------------------------------------------------------------
+  Dataset distribution:
+    my_preterm_cohort: 24
+
+  Disease group distribution:
+    Preterm Labor: 2
+    Term Labor: 22
+
+  Top markers:
+  AFF2             log2FC=5.66    pct=42%  padj=1.0e+00
+  KCNK3            log2FC=5.62    pct=67%  padj=3.3e-02
+  ADAMTS18         log2FC=5.50    pct=38%  padj=1.0e+00
+  EGFLAM           log2FC=5.48    pct=46%  padj=1.0e+00
+  LRP2             log2FC=5.29    pct=83%  padj=3.0e-05
+  ATG9B            log2FC=5.27    pct=50%  padj=1.0e+00
+  TBX5             log2FC=5.27    pct=46%  padj=1.0e+00
+  WNT3A            log2FC=5.22    pct=42%  padj=1.0e+00
+  FAM162B          log2FC=5.20    pct=67%  padj=2.7e-02
+  LGR5             log2FC=5.15    pct=75%  padj=1.6e-03
+  ESRP2            log2FC=5.11    pct=38%  padj=1.0e+00
+  SEMA6D           log2FC=5.10    pct=96%  padj=1.1e-10
+  RNF128           log2FC=5.06    pct=58%  padj=6.9e-01
+  COX4I2           log2FC=5.01    pct=83%  padj=4.0e-05
+  HIGD1B           log2FC=4.98    pct=62%  padj=1.3e-01

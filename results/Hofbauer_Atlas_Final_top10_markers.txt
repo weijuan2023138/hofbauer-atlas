@@ -1,0 +1,86 @@
+Hofbauer Atlas Final - Top 10 Markers per Cluster
+
+Cluster 0: Pro-inflammatory (IL1B, NR4A3, EGR3)
+Cells: 5519 (30.8%)
+
+  IL1B             log2FC=3.09   pct=36%
+  NR4A3            log2FC=2.60   pct=52%
+  BAG3             log2FC=2.60   pct=73%
+  KDM6B            log2FC=2.55   pct=67%
+  TNFSF9           log2FC=2.41   pct=51%
+  EGR3             log2FC=2.40   pct=42%
+  NR4A1            log2FC=2.31   pct=80%
+  DNAJA4           log2FC=2.30   pct=66%
+  CSRNP1           log2FC=2.16   pct=66%
+  ZFAND2A          log2FC=2.15   pct=57%
+
+Cluster 1: MHCII+ (HLA-DQA1, HLA-DQB1, HLA-DRB5)
+Cells: 3306 (18.5%)
+
+  HLA-DQA1         log2FC=4.77   pct=43%
+  HLA-DQB1         log2FC=4.45   pct=39%
+  HLA-DRB5         log2FC=4.06   pct=53%
+  HLA-DPA1         log2FC=3.63   pct=63%
+  HLA-DPB1         log2FC=3.47   pct=55%
+  FGL2             log2FC=3.38   pct=38%
+  HLA-DRB1         log2FC=2.77   pct=62%
+  HLA-DRA          log2FC=2.70   pct=76%
+  HLA-DMA          log2FC=2.52   pct=55%
+  XIST             log2FC=1.98   pct=58%
+
+Cluster 2: Homeostatic (TREM2, CD68, PAGE4)
+Cells: 3291 (18.4%)
+
+  PAGE4            log2FC=1.90   pct=42%
+  TREM2            log2FC=1.41   pct=35%
+  NUDT14           log2FC=1.25   pct=30%
+  LDHB             log2FC=1.22   pct=44%
+  ATP5PO           log2FC=1.20   pct=52%
+  CGA              log2FC=1.11   pct=35%
+  NDUFB8           log2FC=1.09   pct=46%
+  NDUFB5           log2FC=1.08   pct=37%
+  ABCG2            log2FC=1.07   pct=33%
+  PPDPF            log2FC=1.07   pct=44%
+
+Cluster 3: PRKN+ Autophagy (PRKN, C9, SOX5)
+Cells: 3113 (17.4%)
+
+  ANKUB1           log2FC=5.42   pct=51%
+  STEAP1B          log2FC=4.82   pct=31%
+  FBXL7            log2FC=4.51   pct=53%
+  PRKN             log2FC=4.10   pct=57%
+  RAD51B           log2FC=4.03   pct=86%
+  NAALADL2         log2FC=4.02   pct=46%
+  CARMIL1          log2FC=4.01   pct=65%
+  TEX14            log2FC=3.91   pct=55%
+  SOX5             log2FC=3.91   pct=46%
+  NPAS3            log2FC=3.90   pct=56%
+
+Cluster 4: Vascular remodeling (PAPPA, NOTUM, HLA-G)
+Cells: 1878 (10.5%)
+
+  NOTUM            log2FC=3.99   pct=60%
+  ISM2             log2FC=3.92   pct=37%
+  PAPPA2           log2FC=3.92   pct=43%
+  MFAP5            log2FC=3.89   pct=42%
+  TAC3             log2FC=3.89   pct=30%
+  HLA-G            log2FC=3.79   pct=35%
+  HPGD             log2FC=3.61   pct=46%
+  AOC1             log2FC=3.60   pct=56%
+  PAPPA            log2FC=3.50   pct=42%
+  HTRA1            log2FC=3.49   pct=41%
+
+Cluster 5: MKI67+ Proliferating (MKI67, BUB1B, HMMR)
+Cells: 789 (4.4%)
+
+  DEPDC1           log2FC=6.40   pct=32%
+  DLGAP5           log2FC=6.24   pct=44%
+  MKI67            log2FC=6.23   pct=78%
+  HJURP            log2FC=6.19   pct=31%
+  BUB1B            log2FC=6.08   pct=36%
+  KIF4A            log2FC=6.06   pct=38%
+  KIF2C            log2FC=6.01   pct=42%
+  NDC80            log2FC=5.94   pct=42%
+  MND1             log2FC=5.93   pct=41%
+  NCAPG            log2FC=5.87   pct=48%
+

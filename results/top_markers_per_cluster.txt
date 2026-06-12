@@ -1,0 +1,378 @@
+
+C0 (n=2352 cells, 0 UCSF):
+------------------------------------------------------------
+  MRPL23           log2FC=1.93    pct=33%  padj=6.2e-77
+  AGR2             log2FC=1.73    pct=30%  padj=6.3e-69
+  TREM2            log2FC=1.59    pct=41%  padj=3.6e-94
+  TMEM256          log2FC=1.55    pct=44%  padj=3.6e-81
+  NUDT14           log2FC=1.48    pct=36%  padj=6.8e-58
+  CCL3L1           log2FC=1.42    pct=35%  padj=1.1e-49
+  H3F3A            log2FC=1.39    pct=90%  padj=0.0e+00
+  NDUFA3           log2FC=1.37    pct=57%  padj=2.1e-102
+  RENBP            log2FC=1.35    pct=40%  padj=1.2e-54
+  GAPLINC          log2FC=1.35    pct=36%  padj=5.1e-43
+  DYNLRB1          log2FC=1.34    pct=55%  padj=8.4e-95
+  AIF1             log2FC=1.32    pct=96%  padj=0.0e+00
+  SMDT1            log2FC=1.32    pct=46%  padj=2.0e-63
+  PTRHD1           log2FC=1.31    pct=30%  padj=3.1e-39
+  NDUFA6           log2FC=1.30    pct=43%  padj=3.4e-56
+
+C1 (n=1763 cells, 0 UCSF):
+------------------------------------------------------------
+  ICAM4            log2FC=2.51    pct=40%  padj=1.1e-136
+  EGR3             log2FC=2.32    pct=39%  padj=2.0e-126
+  SEMA4A           log2FC=2.32    pct=40%  padj=3.3e-131
+  CYB5D1           log2FC=2.22    pct=34%  padj=2.5e-99
+  TNFSF9           log2FC=2.18    pct=70%  padj=0.0e+00
+  EGR2             log2FC=2.15    pct=59%  padj=1.5e-227
+  AEBP1            log2FC=2.10    pct=32%  padj=1.9e-96
+  TNF              log2FC=2.06    pct=52%  padj=1.9e-180
+  ARL4D            log2FC=2.05    pct=30%  padj=8.6e-84
+  RGS16            log2FC=1.99    pct=49%  padj=2.6e-165
+  DUSP2            log2FC=1.97    pct=69%  padj=2.0e-305
+  DNAJA4           log2FC=1.89    pct=68%  padj=6.9e-270
+  MIR22HG          log2FC=1.88    pct=44%  padj=1.4e-129
+  DNAJB4           log2FC=1.84    pct=82%  padj=0.0e+00
+  NR4A3            log2FC=1.83    pct=41%  padj=6.7e-116
+
+C2 (n=1428 cells, 1 UCSF):
+------------------------------------------------------------
+  HLA-DPA1         log2FC=2.40    pct=38%  padj=1.1e-99
+  HLA-DRA          log2FC=1.75    pct=61%  padj=8.7e-167
+  HLA-DMB          log2FC=1.50    pct=45%  padj=8.3e-83
+  PTP4A1           log2FC=1.47    pct=34%  padj=2.4e-61
+  AXL              log2FC=1.42    pct=32%  padj=9.6e-46
+  SULT1A1          log2FC=1.37    pct=36%  padj=2.8e-53
+  APOC1            log2FC=1.31    pct=48%  padj=6.5e-90
+  BCL11A           log2FC=1.28    pct=44%  padj=2.4e-70
+  FKBP2            log2FC=1.28    pct=41%  padj=2.5e-70
+  BIRC7            log2FC=1.24    pct=38%  padj=3.7e-56
+  LENG8            log2FC=1.23    pct=40%  padj=3.8e-51
+  VAMP5            log2FC=1.22    pct=37%  padj=6.1e-51
+  HLA-DRB1         log2FC=1.21    pct=35%  padj=1.0e-46
+  HLA-DMA          log2FC=1.19    pct=30%  padj=2.8e-34
+  TRIM47           log2FC=1.14    pct=39%  padj=1.4e-46
+
+C3 (n=1418 cells, 4 UCSF):
+------------------------------------------------------------
+  AC105402.3       log2FC=4.82    pct=99%  padj=0.0e+00
+  AC124319.2       log2FC=4.67    pct=40%  padj=4.5e-131
+  IL7R             log2FC=4.29    pct=57%  padj=1.9e-201
+  THSD4-AS1        log2FC=4.27    pct=44%  padj=1.3e-148
+  STEAP1B          log2FC=4.24    pct=54%  padj=1.4e-190
+  SIGLEC12         log2FC=3.88    pct=36%  padj=4.0e-111
+  LUCAT1           log2FC=3.43    pct=52%  padj=6.2e-167
+  DHFR             log2FC=3.22    pct=98%  padj=0.0e+00
+  KITLG            log2FC=3.14    pct=50%  padj=6.8e-152
+  KCNK13           log2FC=2.70    pct=46%  padj=4.5e-134
+  PCSK5            log2FC=2.67    pct=48%  padj=2.2e-137
+  NQO1             log2FC=2.66    pct=43%  padj=1.0e-119
+  IL3RA            log2FC=2.66    pct=37%  padj=1.5e-95
+  SH3PXD2B         log2FC=2.56    pct=52%  padj=5.8e-159
+  ECM1             log2FC=2.48    pct=74%  padj=6.6e-303
+
+C4 (n=1168 cells, 0 UCSF):
+------------------------------------------------------------
+  FCGR3A           log2FC=2.05    pct=51%  padj=7.1e-60
+  PAGE4            log2FC=1.73    pct=38%  padj=5.4e-24
+  C1QB             log2FC=1.51    pct=92%  padj=1.1e-225
+  CST3             log2FC=1.49    pct=88%  padj=2.7e-165
+  TMEM176A         log2FC=1.49    pct=36%  padj=7.5e-14
+  C1QC             log2FC=1.45    pct=89%  padj=1.5e-166
+  C1QA             log2FC=1.45    pct=95%  padj=1.1e-290
+  FCGR1A           log2FC=1.44    pct=52%  padj=3.5e-20
+  CD74             log2FC=1.42    pct=50%  padj=5.0e-19
+  TMEM176B         log2FC=1.40    pct=52%  padj=2.2e-25
+  TYROBP           log2FC=1.40    pct=92%  padj=1.2e-205
+  NPC2             log2FC=1.40    pct=89%  padj=1.8e-150
+  S100A9           log2FC=1.39    pct=87%  padj=4.9e-130
+  GAPDH            log2FC=1.38    pct=85%  padj=1.3e-115
+  MS4A7            log2FC=1.38    pct=59%  padj=5.0e-32
+
+C5 (n=854 cells, 624 UCSF):
+------------------------------------------------------------
+  IGFBP1           log2FC=2.92    pct=42%  padj=5.2e-67
+  MEF2C-AS2        log2FC=2.60    pct=36%  padj=1.9e-45
+  ANKUB1           log2FC=2.53    pct=58%  padj=1.3e-89
+  KIAA1549L        log2FC=2.15    pct=32%  padj=6.2e-33
+  AC100849.1       log2FC=2.15    pct=78%  padj=4.1e-166
+  CARMIL1          log2FC=2.13    pct=67%  padj=4.9e-106
+  PRKN             log2FC=2.06    pct=62%  padj=6.5e-96
+  MIR99AHG         log2FC=2.02    pct=65%  padj=2.2e-99
+  CHSY3            log2FC=2.02    pct=57%  padj=1.6e-77
+  DENND2A          log2FC=2.02    pct=31%  padj=7.7e-30
+  DLEU2            log2FC=2.01    pct=83%  padj=1.3e-187
+  GMDS-DT          log2FC=1.97    pct=59%  padj=2.5e-85
+  NPAS3            log2FC=1.95    pct=64%  padj=1.6e-94
+  ENTPD1-AS1       log2FC=1.95    pct=42%  padj=1.9e-41
+  MRVI1-AS1        log2FC=1.95    pct=39%  padj=9.6e-39
+
+C6 (n=726 cells, 117 UCSF):
+------------------------------------------------------------
+  ASTL             log2FC=5.88    pct=30%  padj=3.6e-50
+  TULP2            log2FC=4.63    pct=48%  padj=4.5e-91
+  NFE2L3           log2FC=4.19    pct=61%  padj=1.3e-127
+  GCH1             log2FC=3.38    pct=39%  padj=3.8e-60
+  KCNG2            log2FC=3.27    pct=52%  padj=1.1e-92
+  TEX14            log2FC=3.18    pct=73%  padj=1.6e-166
+  NPHS1            log2FC=3.13    pct=32%  padj=1.4e-43
+  FBXL14           log2FC=3.07    pct=32%  padj=3.5e-44
+  TRMO             log2FC=2.79    pct=50%  padj=8.4e-80
+  ARMH4            log2FC=2.78    pct=65%  padj=2.7e-129
+  RBKS             log2FC=2.78    pct=41%  padj=8.7e-60
+  CRY1             log2FC=2.76    pct=59%  padj=2.5e-105
+  TBC1D8           log2FC=2.63    pct=40%  padj=1.3e-54
+  U2AF1            log2FC=2.58    pct=69%  padj=1.5e-149
+  MCF2L2           log2FC=2.55    pct=34%  padj=5.8e-42
+
+C7 (n=717 cells, 717 UCSF):
+------------------------------------------------------------
+  CRH              log2FC=5.63    pct=93%  padj=0.0e+00
+  GDA              log2FC=4.87    pct=45%  padj=6.0e-83
+  PHYHIPL          log2FC=4.83    pct=65%  padj=1.5e-145
+  MIR4713HG        log2FC=4.71    pct=68%  padj=6.3e-158
+  SMOC2            log2FC=4.67    pct=44%  padj=9.4e-80
+  PSG8             log2FC=4.66    pct=60%  padj=6.7e-124
+  NEBL             log2FC=4.64    pct=71%  padj=4.6e-167
+  PLEKHA6          log2FC=4.63    pct=74%  padj=2.4e-184
+  RAB3B            log2FC=4.61    pct=36%  padj=5.3e-60
+  GNGT1            log2FC=4.61    pct=49%  padj=3.3e-90
+  GLDN             log2FC=4.61    pct=56%  padj=6.1e-112
+  TMEM108          log2FC=4.52    pct=43%  padj=1.3e-74
+  THSD7A           log2FC=4.52    pct=93%  padj=0.0e+00
+  LRRC1            log2FC=4.48    pct=45%  padj=3.6e-80
+  EXPH5            log2FC=4.45    pct=92%  padj=0.0e+00
+
+C8 (n=677 cells, 0 UCSF):
+------------------------------------------------------------
+  SEMA4A           log2FC=2.80    pct=54%  padj=3.7e-84
+  ICAM4            log2FC=2.62    pct=46%  padj=2.7e-61
+  CYB5D1           log2FC=2.58    pct=41%  padj=2.9e-51
+  EGR3             log2FC=2.35    pct=41%  padj=9.6e-49
+  NR4A3            log2FC=2.33    pct=54%  padj=1.1e-75
+  MIR22HG          log2FC=2.17    pct=49%  padj=1.7e-60
+  EGR2             log2FC=2.13    pct=61%  padj=5.8e-90
+  SLC25A44         log2FC=2.09    pct=30%  padj=6.6e-27
+  DNAJA4           log2FC=2.07    pct=72%  padj=3.8e-120
+  MRNIP            log2FC=2.05    pct=36%  padj=8.0e-35
+  NOTUM            log2FC=2.05    pct=64%  padj=3.3e-103
+  TSPYL2           log2FC=2.05    pct=39%  padj=8.7e-41
+  TAC3             log2FC=2.01    pct=40%  padj=6.3e-46
+  KDM6B            log2FC=2.01    pct=71%  padj=1.5e-114
+  DNAJB4           log2FC=1.97    pct=86%  padj=2.3e-211
+
+C9 (n=606 cells, 595 UCSF):
+------------------------------------------------------------
+  PENK             log2FC=6.56    pct=86%  padj=1.5e-230
+  MMP1             log2FC=5.31    pct=53%  padj=8.0e-87
+  THBS1            log2FC=3.64    pct=39%  padj=3.5e-52
+  SMIM35           log2FC=3.61    pct=37%  padj=3.0e-48
+  PSG7             log2FC=3.53    pct=47%  padj=3.9e-68
+  AC244131.2       log2FC=3.14    pct=34%  padj=2.4e-40
+  SPARCL1          log2FC=3.13    pct=34%  padj=1.6e-41
+  EFEMP1           log2FC=3.06    pct=63%  padj=1.3e-101
+  DPH6-DT          log2FC=2.98    pct=32%  padj=1.4e-35
+  CPED1            log2FC=2.83    pct=46%  padj=8.2e-58
+  SOX5             log2FC=2.76    pct=86%  padj=1.1e-194
+  TSIX             log2FC=2.75    pct=42%  padj=3.2e-52
+  SETBP1           log2FC=2.55    pct=58%  padj=3.3e-78
+  UNC5C            log2FC=2.50    pct=76%  padj=2.0e-129
+  NBEA             log2FC=2.49    pct=48%  padj=1.4e-55
+
+C10 (n=501 cells, 0 UCSF):
+------------------------------------------------------------
+  CX3CR1           log2FC=2.92    pct=30%  padj=2.0e-28
+  PTGER4           log2FC=1.82    pct=34%  padj=5.9e-23
+  LILRB1           log2FC=1.72    pct=34%  padj=1.2e-22
+  TNF              log2FC=1.64    pct=42%  padj=1.1e-25
+  CCL3L1           log2FC=1.46    pct=68%  padj=1.3e-64
+  ILF3-DT          log2FC=1.45    pct=32%  padj=4.6e-15
+  MRVI1            log2FC=1.37    pct=34%  padj=1.9e-17
+  CCL4L2           log2FC=1.35    pct=76%  padj=6.9e-80
+  TNFSF13          log2FC=1.34    pct=36%  padj=5.0e-17
+  VNN2             log2FC=1.34    pct=35%  padj=1.0e-19
+  ADRB2            log2FC=1.30    pct=44%  padj=2.4e-23
+  HSPA6            log2FC=1.30    pct=37%  padj=6.4e-15
+  LILRB4           log2FC=1.26    pct=34%  padj=3.4e-16
+  TNFSF9           log2FC=1.23    pct=44%  padj=3.8e-20
+  HSPA1B           log2FC=1.21    pct=95%  padj=2.7e-193
+
+C11 (n=398 cells, 398 UCSF):
+------------------------------------------------------------
+  ACOXL            log2FC=4.47    pct=64%  padj=8.7e-76
+  KIAA1211         log2FC=4.46    pct=31%  padj=1.5e-25
+  TMC1             log2FC=4.27    pct=44%  padj=4.6e-42
+  COL28A1          log2FC=4.17    pct=30%  padj=3.3e-25
+  GPR78            log2FC=4.11    pct=32%  padj=3.8e-26
+  SH3TC2-DT        log2FC=4.06    pct=46%  padj=1.6e-43
+  SH3TC2           log2FC=4.01    pct=58%  padj=4.1e-62
+  CHODL            log2FC=3.96    pct=86%  padj=3.8e-142
+  OSMR-AS1         log2FC=3.95    pct=38%  padj=2.3e-34
+  ANO2             log2FC=3.92    pct=45%  padj=3.0e-42
+  NPAS2            log2FC=3.87    pct=42%  padj=5.0e-38
+  KMO              log2FC=3.83    pct=50%  padj=2.0e-47
+  THSD4            log2FC=3.82    pct=52%  padj=2.8e-52
+  ATG9B            log2FC=3.82    pct=31%  padj=2.0e-25
+  ADGRL3           log2FC=3.80    pct=54%  padj=3.1e-54
+
+C12 (n=241 cells, 240 UCSF):
+------------------------------------------------------------
+  GH2              log2FC=3.89    pct=59%  padj=3.9e-36
+  LGALS14          log2FC=3.89    pct=40%  padj=7.5e-20
+  HBB              log2FC=3.70    pct=88%  padj=5.7e-86
+  MEIKIN           log2FC=3.57    pct=31%  padj=4.6e-12
+  HSD17B1          log2FC=3.21    pct=61%  padj=9.5e-36
+  GDF15            log2FC=3.05    pct=80%  padj=4.3e-62
+  MEF2C-AS2        log2FC=3.04    pct=39%  padj=1.1e-15
+  HBG1             log2FC=2.99    pct=54%  padj=1.3e-26
+  CSH2             log2FC=2.96    pct=100%  padj=7.5e-217
+  CSHL1            log2FC=2.96    pct=71%  padj=1.1e-48
+  KISS1            log2FC=2.94    pct=98%  padj=9.3e-165
+  MVB12B           log2FC=2.93    pct=54%  padj=7.0e-26
+  HBG2             log2FC=2.91    pct=88%  padj=2.8e-78
+  PSG5             log2FC=2.89    pct=77%  padj=9.5e-57
+  PSG3             log2FC=2.85    pct=88%  padj=1.4e-83
+
+C13 (n=220 cells, 0 UCSF):
+------------------------------------------------------------
+  KIFC1            log2FC=4.51    pct=37%  padj=3.1e-16
+  CDCA3            log2FC=4.43    pct=42%  padj=1.4e-20
+  SPC25            log2FC=4.35    pct=39%  padj=3.1e-18
+  PKMYT1           log2FC=4.34    pct=34%  padj=3.2e-14
+  MYBL2            log2FC=4.31    pct=41%  padj=3.2e-19
+  RRM2             log2FC=4.22    pct=54%  padj=4.4e-30
+  FOXM1            log2FC=4.19    pct=40%  padj=5.8e-18
+  MND1             log2FC=4.18    pct=39%  padj=9.6e-18
+  CDCA5            log2FC=4.18    pct=36%  padj=2.9e-15
+  AURKB            log2FC=4.13    pct=44%  padj=8.3e-22
+  CDT1             log2FC=4.12    pct=38%  padj=4.4e-17
+  SGO1             log2FC=4.09    pct=32%  padj=1.3e-12
+  CCNA2            log2FC=4.07    pct=46%  padj=2.6e-23
+  NCAPH            log2FC=4.03    pct=33%  padj=5.1e-13
+  GTSE1            log2FC=4.02    pct=47%  padj=1.7e-23
+
+C14 (n=196 cells, 1 UCSF):
+------------------------------------------------------------
+  NOTUM            log2FC=2.73    pct=38%  padj=6.1e-10
+  SERPINE1         log2FC=2.42    pct=37%  padj=1.6e-07
+  AOC1             log2FC=2.39    pct=45%  padj=4.6e-11
+  SERPINE2         log2FC=2.34    pct=67%  padj=2.0e-25
+  GNG10            log2FC=2.11    pct=69%  padj=7.2e-23
+  TIMP3            log2FC=2.06    pct=71%  padj=1.4e-25
+  HLA-DRA          log2FC=1.99    pct=32%  padj=4.5e-03
+  NME2             log2FC=1.92    pct=60%  padj=1.1e-13
+  PRG2             log2FC=1.92    pct=98%  padj=2.4e-116
+  ATP6V0C          log2FC=1.87    pct=69%  padj=4.2e-20
+  EEF1G            log2FC=1.84    pct=68%  padj=1.8e-18
+  GABARAP          log2FC=1.84    pct=81%  padj=2.4e-31
+  RNASEK           log2FC=1.74    pct=69%  padj=9.8e-17
+  FLT1             log2FC=1.63    pct=40%  padj=1.7e-04
+  FN1              log2FC=1.62    pct=95%  padj=1.8e-75
+
+C15 (n=177 cells, 0 UCSF):
+------------------------------------------------------------
+  E2F8             log2FC=5.25    pct=36%  padj=5.8e-13
+  CDCA2            log2FC=4.84    pct=33%  padj=6.0e-11
+  MCM10            log2FC=4.75    pct=44%  padj=4.9e-17
+  HJURP            log2FC=4.74    pct=41%  padj=2.0e-15
+  SKA1             log2FC=4.74    pct=38%  padj=6.4e-14
+  DTL              log2FC=4.70    pct=51%  padj=1.6e-22
+  BUB1B            log2FC=4.62    pct=51%  padj=1.8e-22
+  NEK2             log2FC=4.61    pct=34%  padj=7.4e-12
+  KIF2C            log2FC=4.58    pct=54%  padj=3.0e-24
+  DEPDC1           log2FC=4.57    pct=44%  padj=4.6e-17
+  MYBL2            log2FC=4.56    pct=59%  padj=7.7e-29
+  NCAPH            log2FC=4.56    pct=60%  padj=2.9e-29
+  MND1             log2FC=4.52    pct=60%  padj=1.0e-29
+  SPAG5            log2FC=4.47    pct=40%  padj=5.4e-15
+  NDC80            log2FC=4.45    pct=56%  padj=2.3e-25
+
+C16 (n=126 cells, 117 UCSF):
+------------------------------------------------------------
+  DACH1            log2FC=6.91    pct=36%  padj=8.8e-09
+  MEOX2            log2FC=6.69    pct=31%  padj=1.4e-06
+  MIR181A1HG       log2FC=6.43    pct=45%  padj=3.2e-12
+  LDB2             log2FC=6.21    pct=56%  padj=5.5e-18
+  RAPGEF5          log2FC=5.99    pct=37%  padj=4.2e-09
+  EBF1             log2FC=5.92    pct=43%  padj=3.8e-11
+  ADAMTS9-AS2      log2FC=5.67    pct=32%  padj=8.7e-07
+  MEG8             log2FC=5.64    pct=64%  padj=4.1e-22
+  ZEB1             log2FC=5.60    pct=41%  padj=1.3e-10
+  ABLIM1           log2FC=5.50    pct=40%  padj=9.6e-10
+  MECOM            log2FC=5.50    pct=33%  padj=3.6e-07
+  PDE3A            log2FC=5.45    pct=35%  padj=1.3e-07
+  NFIB             log2FC=5.31    pct=55%  padj=7.4e-17
+  SORBS2           log2FC=5.23    pct=44%  padj=2.2e-11
+  PRKG1            log2FC=5.21    pct=48%  padj=8.0e-13
+
+C17 (n=116 cells, 114 UCSF):
+------------------------------------------------------------
+  ADAMTS19         log2FC=7.19    pct=47%  padj=5.3e-12
+  SEMA6D           log2FC=7.16    pct=80%  padj=1.0e-33
+  LGR5             log2FC=7.14    pct=60%  padj=4.0e-18
+  FRAS1            log2FC=7.11    pct=61%  padj=2.2e-19
+  LRP2             log2FC=6.89    pct=58%  padj=3.3e-17
+  SHROOM2          log2FC=6.82    pct=33%  padj=2.7e-06
+  ZBTB7C           log2FC=6.79    pct=49%  padj=6.1e-13
+  NR2F2-AS1        log2FC=6.73    pct=46%  padj=3.5e-11
+  MPP7             log2FC=6.66    pct=72%  padj=6.6e-26
+  KIF26B           log2FC=6.59    pct=53%  padj=4.7e-15
+  HS6ST2           log2FC=6.39    pct=39%  padj=1.9e-08
+  TENM3            log2FC=6.35    pct=88%  padj=1.9e-45
+  TP63             log2FC=6.32    pct=48%  padj=1.6e-12
+  KANK4            log2FC=6.32    pct=34%  padj=5.4e-07
+  TLL1             log2FC=6.31    pct=34%  padj=6.2e-07
+
+C18 (n=87 cells, 0 UCSF):
+------------------------------------------------------------
+  CD300E           log2FC=4.03    pct=51%  padj=1.4e-07
+  SIGLEC12         log2FC=3.87    pct=54%  padj=4.5e-09
+  EMP1             log2FC=3.60    pct=66%  padj=1.0e-12
+  FCER2            log2FC=3.28    pct=32%  padj=2.6e-02
+  CRIP1            log2FC=3.25    pct=68%  padj=1.0e-12
+  MMP19            log2FC=3.08    pct=53%  padj=4.8e-08
+  AC105402.3       log2FC=3.02    pct=94%  padj=9.1e-33
+  THSD4-AS1        log2FC=3.00    pct=39%  padj=7.7e-04
+  IL7R             log2FC=2.94    pct=45%  padj=8.1e-05
+  ITGAX            log2FC=2.76    pct=57%  padj=7.7e-09
+  FLNA             log2FC=2.72    pct=55%  padj=2.8e-08
+  IL3RA            log2FC=2.68    pct=36%  padj=1.7e-02
+  BSCL2            log2FC=2.60    pct=57%  padj=1.1e-08
+  MYO1G            log2FC=2.55    pct=36%  padj=9.4e-03
+  CCL13            log2FC=2.54    pct=94%  padj=4.5e-34
+
+C19 (n=43 cells, 7 UCSF):
+------------------------------------------------------------
+  DTL              log2FC=5.23    pct=91%  padj=4.9e-13
+  POLQ             log2FC=5.12    pct=81%  padj=3.6e-09
+  BRIP1            log2FC=5.06    pct=88%  padj=2.9e-11
+  HIST1H2AM        log2FC=5.06    pct=30%  padj=1.0e+00
+  DIAPH3           log2FC=4.71    pct=84%  padj=1.8e-10
+  MCM10            log2FC=4.51    pct=67%  padj=3.4e-05
+  ZNF367           log2FC=4.49    pct=60%  padj=2.5e-03
+  RAD51            log2FC=4.45    pct=49%  padj=3.0e-02
+  FAM111B          log2FC=4.39    pct=58%  padj=4.6e-03
+  WDR62            log2FC=4.38    pct=58%  padj=1.4e-03
+  KIF24            log2FC=4.34    pct=37%  padj=1.0e+00
+  CDC45            log2FC=4.27    pct=56%  padj=7.2e-03
+  MELK             log2FC=4.21    pct=79%  padj=2.0e-08
+  RAD54L           log2FC=4.19    pct=44%  padj=2.7e-01
+  EXO1             log2FC=4.12    pct=33%  padj=1.0e+00
+
+C20 (n=39 cells, 15 UCSF):
+------------------------------------------------------------
+  KCNQ5            log2FC=7.00    pct=41%  padj=5.2e-01
+  SAMD3            log2FC=6.99    pct=64%  padj=2.0e-04
+  KLRK1            log2FC=6.91    pct=31%  padj=1.0e+00
+  KLRC1            log2FC=6.84    pct=38%  padj=1.0e+00
+  SCML4            log2FC=6.45    pct=38%  padj=8.7e-01
+  IKZF3            log2FC=6.35    pct=51%  padj=5.6e-02
+  NCAM1            log2FC=6.29    pct=33%  padj=1.0e+00
+  BCL11B           log2FC=6.15    pct=31%  padj=1.0e+00
+  PRF1             log2FC=6.01    pct=41%  padj=5.0e-01
+  SKAP1            log2FC=6.00    pct=62%  padj=5.8e-04
+  RUNX3            log2FC=5.94    pct=33%  padj=1.0e+00
+  CARD11           log2FC=5.94    pct=33%  padj=1.0e+00
+  ACAP1            log2FC=5.86    pct=38%  padj=1.0e+00
+  SLFN12L          log2FC=5.62    pct=38%  padj=1.0e+00
+  CD3E             log2FC=5.60    pct=31%  padj=1.0e+00
