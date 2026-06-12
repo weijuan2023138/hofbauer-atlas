@@ -17,9 +17,14 @@ deg_names  <- gsub("deg_|\\.csv","", basename(deg_files))
 deg_list   <- setNames(deg_files, deg_names)
 
 umap_meta$disease_short <- umap_meta$disease_group
+umap_meta$disease_short[umap_meta$disease_group == "Normal 1st trimester"] <- "Normal 1st"
+umap_meta$disease_short[umap_meta$disease_group == "Normal 1st/2nd/Term"] <- "Normal 1st/2nd"
+umap_meta$disease_short[umap_meta$disease_group == "Normal 3rd trimester / Preeclampsia"] <- "Normal 3rd"
+umap_meta$disease_short[umap_meta$disease_group == "Miscarriage / Normal"] <- "Miscarriage"
+umap_meta$disease_short[umap_meta$disease_group == "Preeclampsia"] <- "PE"
+umap_meta$disease_short[umap_meta$disease_group == "Infection"] <- "Infection"
 umap_meta$disease_short[umap_meta$disease_group %in% c("Preterm Labor","Preterm No Labor","Term Labor")] <- "Preterm"
-dis_levels <- c("Normal 1st trimester","Miscarriage / Normal","Infection",
-                "Normal 3rd trimester / Preeclampsia","Preeclampsia","Preterm")
+dis_levels <- c("Normal 1st","Miscarriage","Infection","Normal 3rd","PE","Preterm")
 umap_meta$disease_short <- factor(umap_meta$disease_short, levels=dis_levels)
 
 subtype_cols <- c(
@@ -28,9 +33,8 @@ subtype_cols <- c(
   "Vascular remodeling"="#2E7D32", "MKI67+ Proliferating"="#455A64"
 )
 disease_cols <- c(
-  "Normal 1st trimester"="#4DBBD5", "Miscarriage / Normal"="#F39B7F",
-  "Infection"="#DC0000", "Normal 3rd trimester / Preeclampsia"="#00A087",
-  "Preeclampsia"="#C62828", "Preterm"="#E18727"
+  "Normal 1st"="#4DBBD5","Miscarriage"="#F39B7F","Infection"="#DC0000",
+  "Normal 3rd"="#00A087","PE"="#C62828","Preterm"="#E18727"
 )
 trimester_cols <- c("Early"="#4575B4","Mid"="#FDAE61","Late"="#D73027")
 
@@ -242,8 +246,7 @@ server <- function(input, output, session) {
 
   output$gene_dis_violin <- renderPlotly({
     g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
-    dis_order <- c("Normal 1st trimester","Miscarriage / Normal","Infection",
-                   "Normal 3rd trimester / Preeclampsia","Preeclampsia","Preterm")
+    dis_order <- c("Normal 1st","Miscarriage","Infection","Normal 3rd","PE","Preterm")
     df <- data.frame(Expression=as.numeric(expr[g,]), Disease=umap_meta$disease_short)
     df <- df[df$Disease %in% dis_order, ]
     df$Disease <- factor(df$Disease, levels=intersect(dis_order, unique(df$Disease)))
