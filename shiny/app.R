@@ -41,6 +41,20 @@ disease_cols <- c(
 )
 trimester_cols <- c("Early"="#4575B4","Mid"="#FDAE61","Late"="#D73027")
 
+# ── Helper: individual UMAP panel ──
+make_umap_panel <- function(df, col, pal, title, n=3000) {
+  if(nrow(df) > n) df <- df[sample(nrow(df), n), ]
+  col_vals <- df[[col]]
+  plot_ly(df, x=~UMAP_1, y=~UMAP_2, color=col_vals, colors=pal,
+    type='scatter', mode='markers', marker=list(size=2.5, opacity=0.7),
+    text=~paste(col,":", col_vals), hoverinfo='text') %>%
+    layout(title=list(text=title, font=list(size=13)),
+           xaxis=list(title="", showgrid=F, zeroline=F, showticklabels=F),
+           yaxis=list(title="", showgrid=F, zeroline=F, showticklabels=F),
+           showlegend=FALSE, margin=list(l=5,r=5,t=35,b=5)) %>%
+    config(displayModeBar=FALSE)
+}
+
 # ── UI ──
 ui <- page_navbar(
   title = "Hofbauer Cell Atlas",
@@ -48,7 +62,6 @@ ui <- page_navbar(
 
   # ═══ ATLAS ═══
   nav_panel("Atlas",
-    # Summary row
     layout_column_wrap(width=1/2, heights_equal="row",
       card(full_screen=FALSE,
         card_header("Dataset Summary"),
@@ -62,18 +75,29 @@ ui <- page_navbar(
                 Complemented by snATAC-seq and Stereo-seq spatial transcriptomics.")),
       card(full_screen=FALSE,
         card_header("Subtype Composition"),
-        plotlyOutput("atlas_bar", height="250px")
-      )
+        plotlyOutput("atlas_bar", height="250px"))
     ),
-    # UMAP
-    layout_sidebar(
-      sidebar=sidebar(
-        selectInput("atlas_color", "Color by",
-          choices=c("Subtype"="subtype","Trimester"="trimester",
-                    "Disease"="disease_group","Dataset"="dataset")),
-        checkboxInput("atlas_downsample","Subsample to 5,000 cells",TRUE), width=250),
-      card(full_screen=TRUE, plotlyOutput("atlas_umap",height="650px"))
-    )),
+    tags$hr(),
+    card(full_screen=TRUE,
+      card_header("UMAP — Subtype"),
+      plotlyOutput("umap_subtype", height="300px")),
+    card(full_screen=TRUE,
+      card_header("UMAP — Trimester"),
+      layout_column_wrap(width=1/4, heights_equal="row",
+        card(plotlyOutput("umap_tri_all", height="260px")),
+        card(plotlyOutput("umap_tri_early", height="260px")),
+        card(plotlyOutput("umap_tri_mid", height="260px")),
+        card(plotlyOutput("umap_tri_late", height="260px"))
+      )),
+    card(full_screen=TRUE,
+      card_header("UMAP — Disease Group"),
+      layout_column_wrap(width=1/5, heights_equal="row",
+        card(plotlyOutput("umap_dis_all", height="230px")),
+        card(plotlyOutput("umap_dis_normal1", height="230px")),
+        card(plotlyOutput("umap_dis_pe", height="230px")),
+        card(plotlyOutput("umap_dis_infection", height="230px")),
+        card(plotlyOutput("umap_dis_miscarriage", height="230px"))
+      ))),
 
   # ═══ GENE EXPRESSION ═══
   nav_panel("Gene Expression",
@@ -111,7 +135,6 @@ ui <- page_navbar(
         plotlyOutput("atac_volcano_plot",height="620px")),
       nav_panel("Coverage Tracks",
         tags$div(style="padding:10px;",
-          tags$p(tags$b("ATAC-seq fragment coverage at key gene loci (Term vs Mid)")),
           tags$img(src="Fig6b_ATAC_tracks.png",style="max-width:100%;height:auto"))))),
 
   # ═══ SPATIAL ═══
@@ -125,13 +148,9 @@ ui <- page_navbar(
           uiOutput("spatial_slice_img"))),
       nav_panel("Villus Zoom",
         tags$div(style="padding:10px;",
-          tags$p(tags$b("Magnified view of a representative placental villus. 
-            Hofbauer cells (red) near fetal capillaries, surrounded by fibroblasts (orange).")),
           tags$img(src="Fig3b_villus_zoom.png",style="max-width:100%;height:auto"))),
       nav_panel("Neighborhood Enrichment",
         tags$div(style="padding:10px;",
-          tags$p(tags$b("Cell-type enrichment within 50 μm of Hofbauer cells. 
-            FB (2.77×) and fVEC/fEC (1.91×) most enriched.")),
           tags$img(src="Fig3C_neighborhood.png",style="max-width:100%;height:auto"))))),
 
   # ═══ DOWNLOADS ═══
@@ -157,35 +176,62 @@ ui <- page_navbar(
 # ── Server ──
 server <- function(input, output, session) {
   updateSelectizeInput(session,"gene_search",choices=gene_list,server=TRUE)
-
   current_gene <- reactiveVal("FOLR2")
   observeEvent(input$gene_go, { current_gene(input$gene_search) })
 
-  # ── Atlas ──
+  # ── Atlas bar ──
   output$atlas_bar <- renderPlotly({
     df <- data.frame(Subtype=names(subtype_counts), Count=as.integer(subtype_counts))
     df$Subtype <- factor(df$Subtype, levels=names(subtype_counts))
     plot_ly(df, x=~Count, y=~Subtype, type='bar', orientation='h',
       marker=list(color=subtype_cols[as.character(df$Subtype)]),
-      text=~paste(Subtype,":",Count,"cells"), hoverinfo='text') %>%
+      text=~Subtype, hoverinfo='text') %>%
       layout(xaxis=list(title="Number of cells"), yaxis=list(title="", categoryorder="total ascending"),
              margin=list(l=180), showlegend=F)
   })
 
-  output$atlas_umap <- renderPlotly({
-    n <- if(input$atlas_downsample) 5000 else nrow(umap_meta)
-    df <- umap_meta; if(n < nrow(df)) df <- df[sample(nrow(df),n),]
-    col <- input$atlas_color
-    pal <- switch(col, subtype=subtype_cols, disease_group=disease_cols,
-                  trimester=trimester_cols, dataset=NULL)
-    plot_ly(df, x=~UMAP_1, y=~UMAP_2, color=~get(col), colors=pal,
+  # ── UMAP: Subtype ──
+  output$umap_subtype <- renderPlotly({
+    df <- umap_meta[sample(nrow(umap_meta), 5000), ]
+    plot_ly(df, x=~UMAP_1, y=~UMAP_2, color=~subtype, colors=subtype_cols,
       type='scatter', mode='markers', marker=list(size=3, opacity=0.7),
-      text=~paste(col,":",get(col)), hoverinfo='text') %>%
-      layout(title=list(text=paste("Hofbauer Atlas —",col),font=list(size=16)),
-             xaxis=list(title="UMAP 1", showgrid=F, zeroline=F),
+      text=~paste("Subtype:",subtype), hoverinfo='text') %>%
+      layout(xaxis=list(title="UMAP 1", showgrid=F, zeroline=F),
              yaxis=list(title="UMAP 2", showgrid=F, zeroline=F),
-             legend=list(orientation='v', y=0.5, font=list(size=11)))
+             legend=list(orientation='v', y=0.5, font=list(size=10)))
   })
+
+  # ── UMAP: Trimester (4 panels) ──
+  output$umap_tri_all <- renderPlotly({
+    make_umap_panel(umap_meta, "trimester", trimester_cols, "All", 4000)
+  })
+  for(tr in c("Early","Mid","Late")) {
+    local({
+      t <- tr
+      output[[paste0("umap_tri_",tolower(t))]] <- renderPlotly({
+        df <- umap_meta[umap_meta$trimester == t, ]
+        if(nrow(df)==0) return(plotly_empty())
+        make_umap_panel(df, "trimester", trimester_cols, t, 2000)
+      })
+    })
+  }
+
+  # ── UMAP: Disease (5 panels) ──
+  dis_groups <- c("Normal 1st trimester","Preeclampsia","Infection","Miscarriage / Normal")
+  dis_labels <- c("normal1","pe","infection","miscarriage")
+  output$umap_dis_all <- renderPlotly({
+    make_umap_panel(umap_meta, "disease_group", disease_cols, "All", 4000)
+  })
+  for(i in seq_along(dis_groups)) {
+    local({
+      dg <- dis_groups[i]; lb <- dis_labels[i]
+      output[[paste0("umap_dis_",lb)]] <- renderPlotly({
+        df <- umap_meta[umap_meta$disease_group == dg, ]
+        if(nrow(df)==0) return(plotly_empty())
+        make_umap_panel(df, "disease_group", disease_cols, dg, 2000)
+      })
+    })
+  }
 
   # ── Gene ──
   output$gene_umap <- renderPlotly({
@@ -209,37 +255,35 @@ server <- function(input, output, session) {
       type='violin', box=list(visible=T, width=0.1),
       points='all', jitter=0.3, pointpos=-0.5, marker=list(size=1, opacity=0.3)) %>%
       layout(title=list(text=gene,font=list(size=16)),
-             xaxis=list(title=""), yaxis=list(title="Log-normalized expression"),
-             showlegend=F)
+             xaxis=list(title=""), yaxis=list(title="Log-normalized expression"), showlegend=F)
   })
 
   # ── Disease ──
   output$disease_plot <- renderPlotly({
     req(input$disease_comp, input$disease_view)
-    if(input$disease_view == "volcano") {
-      deg <- read.csv(deg_list[[input$disease_comp]])
-      deg <- deg[!is.na(deg$p_val_adj),]
-      deg$logP <- -log10(deg$p_val_adj + 1e-300)
+    if(input$disease_view=="volcano"){
+      deg <- read.csv(deg_list[[input$disease_comp]]); deg <- deg[!is.na(deg$p_val_adj),]
+      deg$logP <- -log10(deg$p_val_adj+1e-300)
       deg$sig <- "NS"
-      deg$sig[deg$p_val_adj < 0.05 & abs(deg$avg_log2FC) > 0.5 & deg$avg_log2FC > 0] <- "Up in Disease"
-      deg$sig[deg$p_val_adj < 0.05 & abs(deg$avg_log2FC) > 0.5 & deg$avg_log2FC < 0] <- "Up in Control"
+      deg$sig[deg$p_val_adj<0.05 & abs(deg$avg_log2FC)>0.5 & deg$avg_log2FC>0] <- "Up in Disease"
+      deg$sig[deg$p_val_adj<0.05 & abs(deg$avg_log2FC)>0.5 & deg$avg_log2FC<0] <- "Up in Control"
       top <- rbind(head(deg[deg$sig=="Up in Disease",][order(-deg[deg$sig=="Up in Disease",]$avg_log2FC),],10),
                    head(deg[deg$sig=="Up in Control",][order(deg[deg$sig=="Up in Control",]$avg_log2FC),],10))
       deg$label <- ifelse(deg$gene %in% top$gene, deg$gene, "")
-      plot_ly(deg, x=~avg_log2FC, y=~logP, color=~sig,
+      plot_ly(deg,x=~avg_log2FC,y=~logP,color=~sig,
         colors=c("Up in Disease"="#D73027","Up in Control"="#4575B4","NS"="grey80"),
-        type='scatter', mode='markers', marker=list(size=3, opacity=0.5),
+        type='scatter',mode='markers',marker=list(size=3,opacity=0.5),
         text=~paste(gene,"<br>log2FC:",round(avg_log2FC,3),"<br>padj:",format.pval(p_val_adj,digits=2)),
         hoverinfo='text') %>%
-        add_annotations(x=deg$avg_log2FC[deg$label!=""], y=deg$logP[deg$label!=""],
-          text=deg$label[deg$label!=""], showarrow=F, font=list(size=10)) %>%
+        add_annotations(x=deg$avg_log2FC[deg$label!=""],y=deg$logP[deg$label!=""],
+          text=deg$label[deg$label!=""],showarrow=F,font=list(size=10)) %>%
         layout(title=list(text=input$disease_comp,font=list(size=16)),
-               xaxis=list(title="log2 Fold Change"), yaxis=list(title="-log10(adjusted P)"))
+               xaxis=list(title="log2 Fold Change"),yaxis=list(title="-log10(adjusted P)"))
     } else {
-      plot_ly(prop_df, x=~Disease, y=~Proportion, color=~Subtype, colors=subtype_cols,
-        type='bar', text=~paste(Subtype,":",round(Proportion*100,1),"%"), hoverinfo='text') %>%
+      plot_ly(prop_df,x=~Disease,y=~Proportion,color=~Subtype,colors=subtype_cols,
+        type='bar',text=~paste(Subtype,":",round(Proportion*100,1),"%"),hoverinfo='text') %>%
         layout(title=list(text="Subtype Proportions by Disease Group",font=list(size=16)),
-               xaxis=list(title=""), yaxis=list(title="Proportion"), barmode='stack')
+               xaxis=list(title=""),yaxis=list(title="Proportion"),barmode='stack')
     }
   })
 
@@ -249,35 +293,32 @@ server <- function(input, output, session) {
     df$name <- factor(df$name, levels=rev(df$name))
     plot_ly(df, x=~delta, y=~name, type='bar', orientation='h',
       marker=list(color=~delta, colorscale=list(c(0,"#FDAE61"),c(1,"#D73027"))),
-      text=~paste(name,"<br>Δ:",round(delta,1),"%<br>p:",format.pval(pval,digits=2)),
-      hoverinfo='text') %>%
+      text=~paste(name,"<br>Δ:",round(delta,1),"%<br>p:",format.pval(pval,digits=2)),hoverinfo='text') %>%
       layout(title=list(text="TF Motif Enrichment in Term-Specific Open Peaks",font=list(size=16)),
              xaxis=list(title="Δ (% Term − Mid)"), yaxis=list(title=""))
   })
   output$atac_volcano_plot <- renderPlotly({
     df <- atac_peaks[!is.na(atac_peaks$p_val_adj),]; df <- df[order(df$p_val_adj),]
     if(nrow(df)>8000) df <- df[1:8000,]
-    df$logP <- -log10(df$p_val_adj + 1e-300)
-    df$dir <- "NS"
-    df$dir[df$sig=="Sig" & df$avg_log2FC > 0.25] <- "Term"
-    df$dir[df$sig=="Sig" & df$avg_log2FC < -0.25] <- "Mid"
-    plot_ly(df, x=~avg_log2FC, y=~logP, color=~dir,
+    df$logP <- -log10(df$p_val_adj+1e-300); df$dir <- "NS"
+    df$dir[df$sig=="Sig" & df$avg_log2FC>0.25] <- "Term"
+    df$dir[df$sig=="Sig" & df$avg_log2FC< -0.25] <- "Mid"
+    plot_ly(df,x=~avg_log2FC,y=~logP,color=~dir,
       colors=c("Term"="#D73027","Mid"="#4575B4","NS"="grey80"),
-      type='scatter', mode='markers', marker=list(size=2, opacity=0.5),
+      type='scatter',mode='markers',marker=list(size=2,opacity=0.5),
       text=~paste("log2FC:",round(avg_log2FC,3),"<br>padj:",format.pval(p_val_adj,digits=2)),
       hoverinfo='text') %>%
       layout(title=list(text="Differential Accessibility: Term vs Mid",font=list(size=16)),
-             xaxis=list(title="log2 Fold Change (Term / Mid)"),
-             yaxis=list(title="-log10(adjusted P)"))
+             xaxis=list(title="log2 Fold Change"),yaxis=list(title="-log10(adjusted P)"))
   })
 
   # ── Spatial ──
   output$spatial_slice_img <- renderUI({
     req(input$spatial_sample)
     tags$div(style="padding:10px;",
-      tags$p(tags$b(sprintf("Stereo-seq — Sample %s", input$spatial_sample)),
-        tags$br(), "Hofbauer cells (red). Mid-gestation placental basal plate, bin50 resolution."),
-      tags$img(src=sprintf("Fig3a_spatial_%s.png", input$spatial_sample),
+      tags$p(tags$b(sprintf("Stereo-seq — Sample %s",input$spatial_sample)),
+        tags$br(),"Hofbauer cells (red). Mid-gestation placental basal plate, bin50 resolution."),
+      tags$img(src=sprintf("Fig3a_spatial_%s.png",input$spatial_sample),
                style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:4px;"))
   })
 }
