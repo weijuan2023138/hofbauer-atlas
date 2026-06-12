@@ -108,15 +108,7 @@ ui <- navbarPage(
         h4("UMAP Comparison"),
         plotlyOutput("comp_umap", height="500px"),
         h4("Subtype Proportions"),
-        plotlyOutput("comp_prop", height="400px"),
-        hr(),
-        h4("Differential Expression"),
-        fluidRow(
-          column(6, selectInput("dis_deg", "Comparison:",
-            choices = setNames(deg_names, gsub("_vs_"," vs ",deg_names)))),
-          column(3, numericInput("dis_topn", "Top N genes", 20, 5, 50, 5))
-        ),
-        DTOutput("dis_deg_table")
+        plotlyOutput("comp_prop", height="400px")
       )
     )
   ),
@@ -225,6 +217,8 @@ server <- function(input, output, session) {
   output$gene_hm <- renderPlotly({
     g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
     df <- umap_meta; df$Expression <- as.numeric(expr[g,])
+    keeps <- c("Normal 1st","Miscarriage","Infection","Normal 3rd","PE","Preterm")
+    df <- df[df$disease_short %in% keeps, ]
     means <- df %>% group_by(subtype, disease_short) %>%
       summarise(Mean=mean(Expression), .groups="drop")
     p <- ggplot(means, aes(x=disease_short, y=subtype, fill=Mean,
