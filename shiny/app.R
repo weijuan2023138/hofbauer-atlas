@@ -64,8 +64,10 @@ ui <- navbarPage(
     sidebarLayout(
       sidebarPanel(
         selectizeInput("gene_search", "Gene (19,940 total):",
-          choices = NULL, selected = "FOLR2",
-          options = list(placeholder = "Type gene name...")),
+          choices = gene_list, selected = "FOLR2",
+          options = list(placeholder = "Type any gene name...", create = TRUE, maxOptions = 5000)),
+        actionButton("gene_go", "Search", class = "btn-primary", width = "100%"),
+        tags$hr(),
         verbatimTextOutput("gene_stats"),
         width = 3
       ),
@@ -156,6 +158,9 @@ server <- function(input, output, session) {
 
   updateSelectizeInput(session, "gene_search", choices = gene_list, server = TRUE)
 
+  current_gene <- reactiveVal("FOLR2")
+  observeEvent(input$gene_go, { current_gene(input$gene_search) })
+
   # ── Overview ──
   output$ov_umap <- renderPlotly({
     col <- input$ov_color
@@ -184,7 +189,7 @@ server <- function(input, output, session) {
 
   # ── Gene Lookup ──
   output$gene_umap <- renderPlotly({
-    g <- input$gene_search; if(!g %in% rownames(expr)) return(plotly_empty())
+    g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
     df <- umap_meta; df$Expression <- as.numeric(expr[g,])
     p <- ggplot(df, aes(x=UMAP_1, y=UMAP_2, color=Expression,
                text=paste0(g,": ",round(Expression,3)))) +
@@ -195,7 +200,7 @@ server <- function(input, output, session) {
   })
 
   output$gene_violin <- renderPlotly({
-    g <- input$gene_search; if(!g %in% rownames(expr)) return(plotly_empty())
+    g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
     df <- data.frame(Expression=as.numeric(expr[g,]), Subtype=umap_meta$subtype)
     p <- ggplot(df, aes(x=Subtype, y=Expression, fill=Subtype)) +
       geom_violin(scale="width", alpha=0.7) +
@@ -206,7 +211,7 @@ server <- function(input, output, session) {
   })
 
   output$gene_hm <- renderPlotly({
-    g <- input$gene_search; if(!g %in% rownames(expr)) return(plotly_empty())
+    g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
     df <- umap_meta; df$Expression <- as.numeric(expr[g,])
     means <- df %>% group_by(subtype, disease_short) %>%
       summarise(Mean=mean(Expression), .groups="drop")
@@ -220,7 +225,7 @@ server <- function(input, output, session) {
   })
 
   output$gene_stats <- renderText({
-    g <- input$gene_search
+    g <- current_gene()
     if(!g %in% rownames(expr)) return("Gene not found.")
     vals <- as.numeric(expr[g,])
     sprintf("Gene: %s\nMean: %.3f\nMedian: %.3f\nDetected: %.1f%%\nMax: %.3f",
