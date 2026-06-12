@@ -143,17 +143,32 @@ ui <- navbarPage(
 
   # ═══ DOWNLOAD ═══
   tabPanel("Download",
-    h4("Metadata & Data Tables"),
-    DTOutput("dl_table"),
-    br(),
-    downloadButton("dl_meta", "Cell Metadata (CSV)"),
-    br(), br(),
-    downloadButton("dl_prop", "Subtype Proportions (CSV)"),
-    br(), br(),
-    h5("Differential Expression Tables:"),
-    lapply(deg_names, function(d) tagList(
-      tags$a(sprintf("%s (CSV)", d), href = sprintf("shiny_data/deg_%s.csv", d), download = NA), tags$br()
-    ))
+    sidebarLayout(
+      sidebarPanel(
+        h5("Filter Cells"),
+        checkboxGroupInput("dl_disease", "Disease Group:",
+          choices = c("Normal 1st","Miscarriage","Infection","Normal 3rd","PE","Preterm"),
+          selected = c("Normal 1st","Miscarriage","Infection","Normal 3rd","PE","Preterm")),
+        checkboxGroupInput("dl_subtype", "Subtype:",
+          choices = names(subtype_cols), selected = names(subtype_cols)),
+        hr(),
+        h5("Select Genes"),
+        radioButtons("dl_gene_mode", "Genes:",
+          choices = c("All 19,940 genes"="all","Top 5000 variable genes"="var",
+                      "Custom gene list"="custom")),
+        conditionalPanel("input.dl_gene_mode=='custom'",
+          textAreaInput("dl_custom_genes", "Enter genes (one per line or comma-separated):",
+            rows = 6, placeholder = "FOLR2\nCD163\nSPP1\n...")),
+        hr(),
+        downloadButton("dl_expr", "Download CSV", class="btn-primary", width="100%"),
+        width = 3
+      ),
+      mainPanel(
+        h4("Expression Matrix Download"),
+        p("Filter by disease group, subtype, and genes. Downloads log-normalized expression values."),
+        verbatimTextOutput("dl_preview")
+      )
+    )
   )
 )
 
@@ -327,16 +342,48 @@ server <- function(input, output, session) {
   })
 
   # ── Download ──
-  output$dl_table <- renderDT({
-    datatable(umap_meta[, c("subtype","disease_group","UMAP_1","UMAP_2")],
-      options=list(pageLength=15))
+  output$dl_preview <- renderText({
+    cells_keep <- umap_meta$disease_short %in% input$dl_disease &
+                  umap_meta$subtype %in% input$dl_subtype
+    n_cells <- sum(cells_keep)
+    
+    if(input$dl_gene_mode == "all") {
+      n_genes <- nrow(expr)
+    } else if(input$dl_gene_mode == "var") {
+      n_genes <- min(5000, nrow(expr))
+    } else {
+      genes <- strsplit(gsub("[,\\n]+", ",", input$dl_custom_genes), ",")[[1]]
+      genes <- trimws(genes); genes <- genes[genes != ""]
+      n_genes <- sum(genes %in% rownames(expr))
+    }
+    sprintf("Selection: %d cells × %d genes\nEstimated size: ~%.1f MB",
+      n_cells, n_genes, n_cells * n_genes * 8 / 1e6)
   })
-  output$dl_meta <- downloadHandler(
-    filename = "hofbauer_metadata.csv",
-    content = function(file) write.csv(umap_meta, file, row.names=FALSE))
-  output$dl_prop <- downloadHandler(
-    filename = "subtype_proportions.csv",
-    content = function(file) write.csv(prop_tbl, file, row.names=FALSE))
+
+  output$dl_expr <- downloadHandler(
+    filename = function() {
+      sprintf("hofbauer_expr_%dcells_%s.csv.gz", 
+        sum(umap_meta$disease_short %in% input$dl_disease & umap_meta$subtype %in% input$dl_subtype),
+        format(Sys.time(), "%Y%m%d"))
+    },
+    content = function(file) {
+      cells_keep <- umap_meta$disease_short %in% input$dl_disease &
+                    umap_meta$subtype %in% input$dl_subtype
+      
+      if(input$dl_gene_mode == "all") {
+        gene_idx <- 1:nrow(expr)
+      } else if(input$dl_gene_mode == "var") {
+        gene_idx <- 1:min(5000, nrow(expr))
+      } else {
+        genes <- strsplit(gsub("[,\\n]+", ",", input$dl_custom_genes), ",")[[1]]
+        genes <- trimws(genes); genes <- genes[genes != ""]
+        gene_idx <- which(rownames(expr) %in% genes)
+      }
+      
+      mat <- as.matrix(expr[gene_idx, cells_keep, drop=FALSE])
+      write.csv(mat, gzfile(file))
+    }
+  )
 }
 
 shinyApp(ui, server)
