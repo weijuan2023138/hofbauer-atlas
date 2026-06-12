@@ -9,7 +9,7 @@ library(Matrix)
 # ── Load pre-computed data ──
 DATA_DIR <- "shiny_data"
 umap_meta <- read.csv(file.path(DATA_DIR, "umap_meta.csv"))
-expr      <- readRDS(file.path(DATA_DIR, "expr_top2000.rds"))
+expr      <- readRDS(file.path(DATA_DIR, "expr_full.rds"))
 tf_expr   <- readRDS(file.path(DATA_DIR, "tf_expr.rds"))
 mod_scores <- read.csv(file.path(DATA_DIR, "module_scores.csv"))
 prop_df   <- read.csv(file.path(DATA_DIR, "subtype_proportions.csv"))
