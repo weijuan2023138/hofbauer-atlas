@@ -77,7 +77,12 @@ ui <- navbarPage(
           column(6, h4("By Subtype"), plotlyOutput("gene_violin", height="420px"))
         ),
         h4("Mean Expression by Disease Group"),
-        plotlyOutput("gene_hm", height="300px")
+        plotlyOutput("gene_hm", height="420px"),
+        hr(),
+        fluidRow(
+          column(6, h4("By Disease Group"), plotlyOutput("gene_dis_violin", height="420px")),
+          column(6, h4("By Trimester"), plotlyOutput("gene_tri_violin", height="420px"))
+        )
       )
     )
   ),
@@ -230,6 +235,33 @@ server <- function(input, output, session) {
     vals <- as.numeric(expr[g,])
     sprintf("Gene: %s\nMean: %.3f\nMedian: %.3f\nDetected: %.1f%%\nMax: %.3f",
       g, mean(vals), median(vals), mean(vals>0)*100, max(vals))
+  })
+
+  output$gene_dis_violin <- renderPlotly({
+    g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
+    dis_order <- c("Normal 1st trimester","Miscarriage / Normal","Infection",
+                   "Normal 3rd trimester / Preeclampsia","Preeclampsia","Preterm")
+    df <- data.frame(Expression=as.numeric(expr[g,]), Disease=umap_meta$disease_short)
+    df <- df[df$Disease %in% dis_order, ]
+    df$Disease <- factor(df$Disease, levels=intersect(dis_order, unique(df$Disease)))
+    p <- ggplot(df, aes(x=Disease, y=Expression, fill=Disease)) +
+      geom_violin(scale="width", alpha=0.7) +
+      scale_fill_manual(values=disease_cols, guide="none") +
+      labs(x="", y=g) + theme_minimal(base_size=12) +
+      theme(axis.text.x=element_text(angle=30, hjust=1))
+    ggplotly(p)
+  })
+
+  output$gene_tri_violin <- renderPlotly({
+    g <- current_gene(); if(!g %in% rownames(expr)) return(plotly_empty())
+    df <- data.frame(Expression=as.numeric(expr[g,]), Trimester=umap_meta$trimester)
+    df <- df[df$Trimester %in% c("Early","Mid","Late"), ]
+    df$Trimester <- factor(df$Trimester, levels=c("Early","Mid","Late"))
+    p <- ggplot(df, aes(x=Trimester, y=Expression, fill=Trimester)) +
+      geom_violin(scale="width", alpha=0.7) +
+      scale_fill_manual(values=trimester_cols, guide="none") +
+      labs(x="", y=g) + theme_minimal(base_size=12)
+    ggplotly(p)
   })
 
   # ── Disease Comparison ──
