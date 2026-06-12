@@ -33,8 +33,8 @@ subtype_cols <- c(
   "Vascular remodeling"="#2E7D32", "MKI67+ Proliferating"="#455A64"
 )
 disease_cols <- c(
-  "Normal 1st"="#4DBBD5","Miscarriage"="#F39B7F","Infection"="#DC0000",
-  "Normal 3rd"="#00A087","PE"="#C62828","Preterm"="#E18727"
+  "Normal 1st"="#4575B4","Miscarriage"="#D73027","Infection"="#FDB462",
+  "Normal 3rd"="#66C2A5","PE"="#FC8D59","Preterm"="#E41A1C"
 )
 trimester_cols <- c("Early"="#4575B4","Mid"="#FDAE61","Late"="#D73027")
 
