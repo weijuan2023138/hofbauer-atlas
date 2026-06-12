@@ -18,6 +18,9 @@ deg_list   <- setNames(deg_files, deg_names)
 
 umap_meta$disease_short <- umap_meta$disease_group
 umap_meta$disease_short[umap_meta$disease_group %in% c("Preterm Labor","Preterm No Labor","Term Labor")] <- "Preterm"
+dis_levels <- c("Normal 1st trimester","Miscarriage / Normal","Infection",
+                "Normal 3rd trimester / Preeclampsia","Preeclampsia","Preterm")
+umap_meta$disease_short <- factor(umap_meta$disease_short, levels=dis_levels)
 
 subtype_cols <- c(
   "Pro-inflammatory"="#C62828", "MHCII+ Antigen-presenting"="#E65100",
@@ -25,9 +28,9 @@ subtype_cols <- c(
   "Vascular remodeling"="#2E7D32", "MKI67+ Proliferating"="#455A64"
 )
 disease_cols <- c(
-  "Normal 1st trimester"="#4DBBD5", "Normal 1st/2nd/Term"="#00A087",
-  "Normal 3rd trimester / Preeclampsia"="#7E6148", "Preeclampsia"="#C62828",
-  "Miscarriage / Normal"="#F39B7F", "Infection"="#DC0000", "Preterm"="#E18727"
+  "Normal 1st trimester"="#4DBBD5", "Miscarriage / Normal"="#F39B7F",
+  "Infection"="#DC0000", "Normal 3rd trimester / Preeclampsia"="#00A087",
+  "Preeclampsia"="#C62828", "Preterm"="#E18727"
 )
 trimester_cols <- c("Early"="#4575B4","Mid"="#FDAE61","Late"="#D73027")
 
