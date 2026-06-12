@@ -1,0 +1,55 @@
+"Var1","Var2","Freq"
+"Pro-inflammatory","Infection",0
+"MHCII+ Antigen-presenting","Infection",0.0121500264131009
+"Homeostatic","Infection",0.0433174854727945
+"PRKN+ Autophagy","Infection",0.920760697305864
+"Vascular remodeling","Infection",0.00316957210776545
+"MKI67+ Proliferating","Infection",0.0206022187004754
+"Pro-inflammatory","Miscarriage / Normal",0.0607476635514019
+"MHCII+ Antigen-presenting","Miscarriage / Normal",0.142523364485981
+"Homeostatic","Miscarriage / Normal",0.345794392523364
+"PRKN+ Autophagy","Miscarriage / Normal",0
+"Vascular remodeling","Miscarriage / Normal",0.364485981308411
+"MKI67+ Proliferating","Miscarriage / Normal",0.0864485981308411
+"Pro-inflammatory","Normal 1st trimester",0.0479192938209332
+"MHCII+ Antigen-presenting","Normal 1st trimester",0.293820933165195
+"Homeostatic","Normal 1st trimester",0.419609079445145
+"PRKN+ Autophagy","Normal 1st trimester",0
+"Vascular remodeling","Normal 1st trimester",0.0715636822194199
+"MKI67+ Proliferating","Normal 1st trimester",0.167087011349306
+"Pro-inflammatory","Normal 1st/2nd/Term",0
+"MHCII+ Antigen-presenting","Normal 1st/2nd/Term",0.0325379609544469
+"Homeostatic","Normal 1st/2nd/Term",0
+"PRKN+ Autophagy","Normal 1st/2nd/Term",0.89587852494577
+"Vascular remodeling","Normal 1st/2nd/Term",0.06941431670282
+"MKI67+ Proliferating","Normal 1st/2nd/Term",0.00216919739696312
+"Pro-inflammatory","Normal 3rd trimester / Preeclampsia",0.394728278555158
+"MHCII+ Antigen-presenting","Normal 3rd trimester / Preeclampsia",0.0865603644646925
+"Homeostatic","Normal 3rd trimester / Preeclampsia",0.208428246013667
+"PRKN+ Autophagy","Normal 3rd trimester / Preeclampsia",0.0953465668727628
+"Vascular remodeling","Normal 3rd trimester / Preeclampsia",0.201757240481614
+"MKI67+ Proliferating","Normal 3rd trimester / Preeclampsia",0.0131793036121054
+"Pro-inflammatory","Preeclampsia",0.0411184210526316
+"MHCII+ Antigen-presenting","Preeclampsia",0.0953947368421053
+"Homeostatic","Preeclampsia",0.167763157894737
+"PRKN+ Autophagy","Preeclampsia",0.610197368421053
+"Vascular remodeling","Preeclampsia",0.0444078947368421
+"MKI67+ Proliferating","Preeclampsia",0.0411184210526316
+"Pro-inflammatory","Preterm Labor",0.708882134414049
+"MHCII+ Antigen-presenting","Preterm Labor",0.203309692671395
+"Homeostatic","Preterm Labor",0.0435663627152989
+"PRKN+ Autophagy","Preterm Labor",0
+"Vascular remodeling","Preterm Labor",0.0297196892941574
+"MKI67+ Proliferating","Preterm Labor",0.0145221209050996
+"Pro-inflammatory","Preterm No Labor",0.0754966887417219
+"MHCII+ Antigen-presenting","Preterm No Labor",0.793377483443709
+"Homeostatic","Preterm No Labor",0.0675496688741722
+"PRKN+ Autophagy","Preterm No Labor",0
+"Vascular remodeling","Preterm No Labor",0.0556291390728477
+"MKI67+ Proliferating","Preterm No Labor",0.00794701986754967
+"Pro-inflammatory","Term Labor",0.498641304347826
+"MHCII+ Antigen-presenting","Term Labor",0.328804347826087
+"Homeostatic","Term Labor",0.113451086956522
+"PRKN+ Autophagy","Term Labor",0
+"Vascular remodeling","Term Labor",0.0407608695652174
+"MKI67+ Proliferating","Term Labor",0.0183423913043478
