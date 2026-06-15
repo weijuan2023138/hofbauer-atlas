@@ -5,6 +5,6 @@ account: sc-macrophage
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17398380
-bundleId: 12118091
+bundleId: 12128557
 url: https://sc-macrophage.shinyapps.io/hofbauer-atlas/
 version: 1

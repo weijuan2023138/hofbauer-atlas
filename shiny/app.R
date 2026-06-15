@@ -22,8 +22,10 @@ umap_meta$disease_short[umap_meta$disease_group == "Normal 1st/2nd/Term"] <- "No
 umap_meta$disease_short[umap_meta$disease_group == "Normal 3rd trimester / Preeclampsia"] <- "Normal 3rd"
 umap_meta$disease_short[umap_meta$disease_group == "Miscarriage / Normal"] <- "Miscarriage"
 umap_meta$disease_short[umap_meta$disease_group == "Preeclampsia"] <- "PE"
+umap_meta$disease_short[umap_meta$disease_group == "Preeclampsia / Control"] <- "PE"
+umap_meta$disease_short[umap_meta$disease_group == "Severe Preeclampsia"] <- "PE"
 umap_meta$disease_short[umap_meta$disease_group == "Infection"] <- "Infection"
-umap_meta$disease_short[umap_meta$disease_group %in% c("Preterm Labor","Preterm No Labor","Term Labor")] <- "Preterm"
+umap_meta$disease_short[umap_meta$disease_group == "Preterm Labor / Term Labor"] <- "Preterm"
 dis_levels <- c("Normal 1st","Miscarriage","Infection","Normal 3rd","PE","Preterm")
 umap_meta$disease_short <- factor(umap_meta$disease_short, levels=dis_levels)
 
@@ -51,7 +53,7 @@ ui <- navbarPage(
     fluidRow(
       column(4,
         h4("Hofbauer Cell Atlas"),
-        p(sprintf("%d Hofbauer cells from 9 datasets", nrow(umap_meta))),
+        p(sprintf("%d Hofbauer cells from 11 datasets", nrow(umap_meta))),
         p("6 subtypes across normal pregnancy, miscarriage, infection, preeclampsia, and preterm birth"),
         p("Integrated scRNA-seq + snATAC-seq + Stereo-seq spatial transcriptomics"),
         hr(),
@@ -70,7 +72,7 @@ ui <- navbarPage(
   tabPanel("Gene Lookup",
     sidebarLayout(
       sidebarPanel(
-        selectizeInput("gene_search", "Gene (19,940 total):",
+        selectizeInput("gene_search", "Gene (18,492 total):",
           choices = gene_list, selected = "FOLR2",
           options = list(placeholder = "Type any gene name...", create = TRUE, maxOptions = 5000)),
         actionButton("gene_go", "Search", class = "btn-primary", width = "100%"),
@@ -154,7 +156,7 @@ ui <- navbarPage(
         hr(),
         h5("Select Genes"),
         radioButtons("dl_gene_mode", "Genes:",
-          choices = c("All 19,940 genes"="all","Top 5000 variable genes"="var",
+          choices = c("All 18,492 genes"="all","Top 5000 variable genes"="var",
                       "Custom gene list"="custom")),
         conditionalPanel("input.dl_gene_mode=='custom'",
           textAreaInput("dl_custom_genes", "Enter genes (one per line or comma-separated):",
